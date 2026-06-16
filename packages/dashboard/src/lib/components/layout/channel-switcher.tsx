@@ -89,7 +89,7 @@ export function ChannelSwitcher() {
                     if (channel.id !== displayChannel?.id) {
                         setActiveChannel(channel.id);
                         const segments = currentPath.split('/').filter(Boolean);
-                        if (segments.length > 1) {
+                        if (segments.length > 1 && channel.code !== DEFAULT_CHANNEL_CODE) {
                             navigate({ to: `/${segments[0]}` as any });
                         }
                     }
