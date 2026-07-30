@@ -203,6 +203,13 @@ msgstr "فعلی"
 msgid "No fulfillments"
 msgstr "هیچ تحویلی وجود ندارد"
 
+#. placeholder {0}: failed.length
+#. placeholder {1}: failed.length
+#. placeholder {2}: failed.length
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:116
+msgid "{0, plural, one {Failed to delete {1} stock location: {messages}} other {Failed to delete {2} stock locations: {messages}}}"
+msgstr "{0, plural, one {حذف {1} مکان موجودی ناموفق بود: {messages}} other {حذف {2} مکان موجودی ناموفق بود: {messages}}}"
+
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:339
 msgid "When this is enabled, the prices entered in the product catalog will be included in the tax for the default tax zone."
 msgstr "وقتی این فعال باشد، قیمت‌های وارد شده در کاتالوگ محصول شامل مالیات برای منطقه مالیاتی پیش‌فرض خواهد بود."
@@ -383,10 +390,9 @@ msgstr "کل بازپرداخت نمی‌تواند منفی باشد"
 msgid "View details"
 msgstr "مشاهده جزئیات"
 
-#. placeholder {0}: entityIds.length
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:95
-msgid "Select a channel to assign {0} {entityType} to"
-msgstr "یک کانال برای اختصاص {0} {entityType} انتخاب کنید"
+#~ msgid "Select a channel to assign {0} {entityType} to"
+#~ msgstr "یک کانال برای اختصاص {0} {entityType} انتخاب کنید"
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:100
 msgid "Successfully created customer"
@@ -1048,6 +1054,10 @@ msgstr "تخصیص داده شده"
 msgid "Failed to set coupon code for order: {0}"
 msgstr ""
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:191
+msgid "Select what to do with remaining stock"
+msgstr "انتخاب کنید با موجودی باقی‌مانده چه کاری انجام شود"
+
 #: src/lib/components/layout/nav-user.tsx:102
 msgid "Explore Platform & Cloud"
 msgstr "کاوش پلتفرم و ابر"
@@ -1432,7 +1442,6 @@ msgstr "تبلیغات با موفقیت به‌روزرسانی شد"
 msgid "{rejected, plural, one {Failed to cancel {rejected} job} other {Failed to cancel {rejected} jobs}}"
 msgstr "{rejected, plural, one {لغو {rejected} کار ناموفق بود} other {لغو {rejected} کار ناموفق بود}}"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:111
 #: src/lib/components/shared/channel-selector.tsx:47
 msgid "Select a channel"
 msgstr "یک کانال انتخاب کنید"
@@ -1444,6 +1453,11 @@ msgstr "زبان نمایش"
 #: src/app/routes/_authenticated/_orders/components/order-detail-shared.tsx:309
 msgid "Fulfillment details"
 msgstr "جزئیات تحویل"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:89
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:202
+msgid "Discard remaining stock"
+msgstr "کنار گذاشتن موجودی باقی‌مانده"
 
 #: src/lib/components/data-input/datetime-input.tsx:181
 msgid "Now"
@@ -1495,6 +1509,8 @@ msgstr "استفاده به عنوان آدرس صورتحساب پیش‌فرض
 #: src/app/common/delete-bulk-action.tsx:139
 #: src/app/routes/_authenticated/_assets/components/asset-bulk-actions.tsx:41
 #: src/app/routes/_authenticated/_products/products_.$id_.variants.tsx:337
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:217
+#: src/app/routes/_authenticated/_stock-locations/components/stock-location-bulk-actions.tsx:28
 #: src/lib/components/data-table/use-generated-columns.tsx:407
 #: src/lib/components/data-table/use-generated-columns.tsx:437
 #: src/lib/components/data-table/views-sheet.tsx:270
@@ -1633,6 +1649,7 @@ msgstr "رفتن به صفحه آخر"
 #: src/app/routes/_authenticated/_orders/components/settle-refund-dialog.tsx:71
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:273
 #: src/app/routes/_authenticated/_products/components/force-remove-option-group-dialog.tsx:48
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:210
 #: src/app/routes/_authenticated/_system/settings-store.tsx:140
 #: src/lib/components/data-input/product-multi-selector-input.tsx:470
 #: src/lib/components/data-table/data-table-bulk-action-item.tsx:122
@@ -1641,7 +1658,7 @@ msgstr "رفتن به صفحه آخر"
 #: src/lib/components/data-table/views-sheet.tsx:293
 #: src/lib/components/layout/manage-languages-dialog.tsx:379
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:126
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:145
 #: src/lib/components/shared/confirmation-dialog.tsx:42
 #: src/lib/components/shared/customer-address-form.tsx:253
 #: src/lib/components/shared/navigation-confirmation.tsx:55
@@ -1915,6 +1932,10 @@ msgstr "نتیجه‌ای وجود ندارد"
 msgid "Column settings"
 msgstr "تنظیمات ستون"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:137
+msgid "{count, plural, one {Failed to delete {count} stock location} other {Failed to delete {count} stock locations}}"
+msgstr "{count, plural, one {حذف {count} مکان موجودی ناموفق بود} other {حذف {count} مکان موجودی ناموفق بود}}"
+
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:224
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:110
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:137
@@ -1936,6 +1957,14 @@ msgstr "حذف گروه‌های گزینه ناموفق بود"
 #: src/app/routes/_authenticated/_orders/components/order-history/order-history-utils.tsx:97
 msgid "Order delivered"
 msgstr "سفارش تحویل داده شد"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:47
+msgid "Transfer to {name}"
+msgstr "انتقال به {name}"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:174
+msgid "Remaining stock"
+msgstr "موجودی باقی‌مانده"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
@@ -2720,6 +2749,11 @@ msgstr "تخفیف"
 msgid "All types"
 msgstr "همه انواع"
 
+#. placeholder {0}: entityIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:121
+msgid "Select channels to assign {0} {entityType} to"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/components/draft-order-status.tsx:29
 msgid "Only draft orders can be completed"
 msgstr "فقط پیش‌نویس سفارشات می‌تواند تکمیل شود"
@@ -2745,7 +2779,7 @@ msgstr "افزودن مقادیر ویژگی"
 msgid "after"
 msgstr "بعد از"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:103
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:129
 msgid "Channel"
 msgstr "کانال"
 
@@ -3038,6 +3072,11 @@ msgstr "ذخیره تغییرات"
 msgid "Address updated"
 msgstr "آدرس به‌روزرسانی شد"
 
+#. placeholder {0}: selectedChannelIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:95
+msgid "Successfully assigned {entityIdsLength} {entityType} to {0} channels"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/hooks/use-refund-order.ts:299
 msgid "Refund processed successfully"
 msgstr "بازپرداخت با موفقیت پردازش شد"
@@ -3281,13 +3320,19 @@ msgstr "دسته‌بندی"
 msgid "Moving..."
 msgstr "در حال جابجایی..."
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:129
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:148
 msgid "Assign"
 msgstr "اختصاص دادن"
 
 #: src/app/routes/_authenticated/_sellers/sellers_.$id.tsx:56
 msgid "Successfully created seller"
 msgstr "فروشنده با موفقیت ایجاد شد"
+
+#. placeholder {0}: failedChannelIds.length
+#. placeholder {1}: selectedChannelIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:104
+msgid "Failed to assign {entityIdsLength} {entityType} to {0} of {1} channels"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:91
 msgid "Successfully updated shipping method"
@@ -3306,6 +3351,10 @@ msgstr "برای مرتب‌سازی بکشید"
 #: src/app/routes/_authenticated/_zones/zones.tsx:24
 msgid "Zones"
 msgstr "مناطق"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:163
+msgid "Choose what to do with any stock remaining in the {count, plural, one {# stock location} other {# stock locations}} you are deleting. All selected locations transfer their remaining stock into the single location you choose, or discard it."
+msgstr "انتخاب کنید با موجودی باقی‌مانده در {count, plural, one {# مکان موجودی} other {# مکان موجودی}} که حذف می‌کنید چه کاری انجام شود. همه مکان‌های انتخاب‌شده موجودی باقی‌مانده خود را به تنها مکانی که انتخاب می‌کنید منتقل می‌کنند یا آن را کنار می‌گذارند."
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:170
 #: src/lib/components/shared/facet-value-selector.tsx:123
@@ -3393,6 +3442,10 @@ msgstr "یک کشور انتخاب کنید"
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:100
 msgid "Failed to update shipping method"
 msgstr "به‌روزرسانی روش ارسال ناموفق بود"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:103
+msgid "{deleted, plural, one {Deleted {deleted} stock location} other {Deleted {deleted} stock locations}}"
+msgstr "{deleted, plural, one {{deleted} مکان موجودی حذف شد} other {{deleted} مکان موجودی حذف شد}}"
 
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:42
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods.tsx:19
@@ -3588,6 +3641,10 @@ msgstr "وضعیت پیش‌نویس سفارش"
 #~ msgid "Successfully created product options"
 #~ msgstr "گزینه‌های محصول با موفقیت ایجاد شد"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:190
+msgid "Loading locations…"
+msgstr "در حال بارگذاری مکان‌ها…"
+
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:110
 msgid "Failed to create payment method"
 msgstr "ایجاد روش پرداخت ناموفق بود"
@@ -3665,6 +3722,13 @@ msgstr "تسویه پرداخت ناموفق بود"
 #: src/app/routes/_authenticated/_orders/orders_.$id_.modify.tsx:300
 msgid "No billing address"
 msgstr "آدرس صورتحساب وجود ندارد"
+
+#. placeholder {0}: failed.length
+#. placeholder {1}: failed.length
+#. placeholder {2}: failed.length
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:120
+msgid "{0, plural, one {Failed to delete {1} stock location} other {Failed to delete {2} stock locations}}"
+msgstr "{0, plural, one {حذف {1} مکان موجودی ناموفق بود} other {حذف {2} مکان موجودی ناموفق بود}}"
 
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:119
 msgid "Facet"
@@ -4314,6 +4378,10 @@ msgstr "درج لینک جدید با URL و گزینه‌های هدف"
 msgid "Height"
 msgstr "ارتفاع"
 
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:118
+msgid "Assign {entityType} to channels"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/components/order-modification-preview-dialog.tsx:180
 msgid "A refund of {formattedDiff} is required. Select payment amounts and enter a note to proceed."
 msgstr "استرداد به مبلغ {formattedDiff} مورد نیاز است. مبالغ پرداخت را انتخاب کرده و یادداشتی برای ادامه وارد کنید."
@@ -4340,6 +4408,7 @@ msgstr "افزودن کانال"
 #~ msgid "Failed to update product option group"
 #~ msgstr "به‌روزرسانی گروه گزینه‌های محصول ناموفق بود"
 
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:137
 #: src/lib/components/shared/channel-selector.tsx:48
 msgid "Search channels..."
 msgstr "جستجوی کانال‌ها..."
@@ -4379,6 +4448,10 @@ msgstr "تبدیل نما به عمومی ناموفق بود"
 
 #: src/app/routes/_authenticated/_payment-methods/components/payment-eligibility-checker-selector.tsx:37
 msgid "Select Payment Eligibility Checker"
+msgstr ""
+
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:136
+msgid "Select one or more channels"
 msgstr ""
 
 #: src/lib/components/data-table/filters/data-table-enum-filter.tsx:53
@@ -4617,6 +4690,10 @@ msgstr "فیلدهای سفارشی"
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods.tsx:71
 msgid "New Shipping Method"
 msgstr "روش ارسال جدید"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:160
+msgid "Delete stock locations"
+msgstr "حذف مکان‌های موجودی"
 
 #: src/lib/components/data-table/human-readable-operator.tsx:47
 msgid "is greater than or equal to"
@@ -5121,8 +5198,8 @@ msgid "Using native authentication strategy"
 msgstr "استفاده از استراتژی احراز هویت بومی"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:73
-msgid "Failed to assign {entityIdsLength} {entityType} to channel"
-msgstr "تخصیص {entityIdsLength} {entityType} به کانال ناموفق بود"
+#~ msgid "Failed to assign {entityIdsLength} {entityType} to channel"
+#~ msgstr "تخصیص {entityIdsLength} {entityType} به کانال ناموفق بود"
 
 #: src/lib/components/layout/manage-languages-dialog.tsx:351
 msgid "Default Language"
@@ -5543,8 +5620,8 @@ msgid "Failed to create shipping method"
 msgstr "ایجاد روش ارسال ناموفق بود"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:68
-msgid "Successfully assigned {entityIdsLength} {entityType} to channel"
-msgstr "{entityIdsLength} {entityType} با موفقیت به کانال اختصاص داده شد"
+#~ msgid "Successfully assigned {entityIdsLength} {entityType} to channel"
+#~ msgstr "{entityIdsLength} {entityType} با موفقیت به کانال اختصاص داده شد"
 
 #: src/lib/components/layout/manage-languages-dialog.tsx:253
 msgid "Global Languages"
@@ -5602,7 +5679,7 @@ msgstr "مقدار"
 msgid "Customer updated"
 msgstr "مشتری به‌روزرسانی شد"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:146
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:165
 msgid "Price conversion factor"
 msgstr "ضریب تبدیل قیمت"
 
@@ -5745,8 +5822,8 @@ msgid "New Facet"
 msgstr "ویژگی جدید"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:92
-msgid "Assign {entityType} to channel"
-msgstr "اختصاص {entityType} به کانال"
+#~ msgid "Assign {entityType} to channel"
+#~ msgstr "اختصاص {entityType} به کانال"
 
 #: src/lib/components/data-table/data-table-bulk-action-item.tsx:125
 #: src/lib/components/shared/confirmation-dialog.tsx:51

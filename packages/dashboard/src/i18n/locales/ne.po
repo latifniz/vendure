@@ -203,6 +203,13 @@ msgstr "हालको"
 msgid "No fulfillments"
 msgstr "कुनै पूर्तिहरू छैनन्"
 
+#. placeholder {0}: failed.length
+#. placeholder {1}: failed.length
+#. placeholder {2}: failed.length
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:116
+msgid "{0, plural, one {Failed to delete {1} stock location: {messages}} other {Failed to delete {2} stock locations: {messages}}}"
+msgstr "{0, plural, one {{1} स्टक स्थान मेट्न सकिएन: {messages}} other {{2} स्टक स्थानहरू मेट्न सकिएन: {messages}}}"
+
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:339
 msgid "When this is enabled, the prices entered in the product catalog will be included in the tax for the default tax zone."
 msgstr "यो सक्षम पारिएको बेला, उत्पादन सूचीमा प्रविष्ट गरिएका मूल्यहरू पूर्वनिर्धारित कर क्षेत्रको लागि करमा समावेश हुनेछन्।"
@@ -383,10 +390,9 @@ msgstr "फिर्ता कुल नकारात्मक हुन स�
 msgid "View details"
 msgstr "विवरणहरू हेर्नुहोस्"
 
-#. placeholder {0}: entityIds.length
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:95
-msgid "Select a channel to assign {0} {entityType} to"
-msgstr "{0} {entityType} असाइन गर्न च्यानल चयन गर्नुहोस्"
+#~ msgid "Select a channel to assign {0} {entityType} to"
+#~ msgstr "{0} {entityType} असाइन गर्न च्यानल चयन गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:100
 msgid "Successfully created customer"
@@ -1048,6 +1054,10 @@ msgstr "आवंटित"
 msgid "Failed to set coupon code for order: {0}"
 msgstr ""
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:191
+msgid "Select what to do with remaining stock"
+msgstr "बाँकी स्टकको के गर्ने भन्ने छान्नुहोस्"
+
 #: src/lib/components/layout/nav-user.tsx:102
 msgid "Explore Platform & Cloud"
 msgstr "Platform & Cloud अन्वेषण गर्नुहोस्"
@@ -1432,7 +1442,6 @@ msgstr "प्रमोशन सफलतापूर्वक अपडेट 
 msgid "{rejected, plural, one {Failed to cancel {rejected} job} other {Failed to cancel {rejected} jobs}}"
 msgstr "{rejected, plural, one {{rejected} कार्य रद्द गर्न असफल भयो} other {{rejected} कार्यहरू रद्द गर्न असफल भयो}}"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:111
 #: src/lib/components/shared/channel-selector.tsx:47
 msgid "Select a channel"
 msgstr "च्यानल चयन गर्नुहोस्"
@@ -1444,6 +1453,11 @@ msgstr "प्रदर्शन भाषा"
 #: src/app/routes/_authenticated/_orders/components/order-detail-shared.tsx:309
 msgid "Fulfillment details"
 msgstr "पूर्ति विवरणहरू"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:89
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:202
+msgid "Discard remaining stock"
+msgstr "बाँकी स्टक हटाउनुहोस्"
 
 #: src/lib/components/data-input/datetime-input.tsx:181
 msgid "Now"
@@ -1495,6 +1509,8 @@ msgstr "पूर्वनिर्धारित बिलिङ ठेगा�
 #: src/app/common/delete-bulk-action.tsx:139
 #: src/app/routes/_authenticated/_assets/components/asset-bulk-actions.tsx:41
 #: src/app/routes/_authenticated/_products/products_.$id_.variants.tsx:337
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:217
+#: src/app/routes/_authenticated/_stock-locations/components/stock-location-bulk-actions.tsx:28
 #: src/lib/components/data-table/use-generated-columns.tsx:407
 #: src/lib/components/data-table/use-generated-columns.tsx:437
 #: src/lib/components/data-table/views-sheet.tsx:270
@@ -1633,6 +1649,7 @@ msgstr "अन्तिम पृष्ठमा जानुहोस्"
 #: src/app/routes/_authenticated/_orders/components/settle-refund-dialog.tsx:71
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:273
 #: src/app/routes/_authenticated/_products/components/force-remove-option-group-dialog.tsx:48
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:210
 #: src/app/routes/_authenticated/_system/settings-store.tsx:140
 #: src/lib/components/data-input/product-multi-selector-input.tsx:470
 #: src/lib/components/data-table/data-table-bulk-action-item.tsx:122
@@ -1641,7 +1658,7 @@ msgstr "अन्तिम पृष्ठमा जानुहोस्"
 #: src/lib/components/data-table/views-sheet.tsx:293
 #: src/lib/components/layout/manage-languages-dialog.tsx:379
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:126
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:145
 #: src/lib/components/shared/confirmation-dialog.tsx:42
 #: src/lib/components/shared/customer-address-form.tsx:253
 #: src/lib/components/shared/navigation-confirmation.tsx:55
@@ -1915,6 +1932,10 @@ msgstr "कुनै परिणामहरू छैनन्"
 msgid "Column settings"
 msgstr "स्तम्भ सेटिङहरू"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:137
+msgid "{count, plural, one {Failed to delete {count} stock location} other {Failed to delete {count} stock locations}}"
+msgstr "{count, plural, one {{count} स्टक स्थान मेट्न सकिएन} other {{count} स्टक स्थानहरू मेट्न सकिएन}}"
+
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:224
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:110
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:137
@@ -1936,6 +1957,14 @@ msgstr "विकल्प समूहहरू हटाउन असफल �
 #: src/app/routes/_authenticated/_orders/components/order-history/order-history-utils.tsx:97
 msgid "Order delivered"
 msgstr "अर्डर वितरण गरियो"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:47
+msgid "Transfer to {name}"
+msgstr "{name} मा सार्नुहोस्"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:174
+msgid "Remaining stock"
+msgstr "बाँकी स्टक"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
@@ -2720,6 +2749,11 @@ msgstr "छुट"
 msgid "All types"
 msgstr "सबै प्रकारहरू"
 
+#. placeholder {0}: entityIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:121
+msgid "Select channels to assign {0} {entityType} to"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/components/draft-order-status.tsx:29
 msgid "Only draft orders can be completed"
 msgstr "ड्राफ्ट अर्डरहरू मात्र पूरा गर्न सकिन्छ"
@@ -2745,7 +2779,7 @@ msgstr "विशेषता मानहरू थप्नुहोस्"
 msgid "after"
 msgstr "पछि"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:103
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:129
 msgid "Channel"
 msgstr "च्यानल"
 
@@ -3038,6 +3072,11 @@ msgstr "परिवर्तनहरू सुरक्षित गर्न�
 msgid "Address updated"
 msgstr "ठेगाना अपडेट गरियो"
 
+#. placeholder {0}: selectedChannelIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:95
+msgid "Successfully assigned {entityIdsLength} {entityType} to {0} channels"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/hooks/use-refund-order.ts:299
 msgid "Refund processed successfully"
 msgstr "फिर्ता सफलतापूर्वक प्रशोधन गरियो"
@@ -3281,13 +3320,19 @@ msgstr "श्रेणी"
 msgid "Moving..."
 msgstr "सार्दै..."
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:129
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:148
 msgid "Assign"
 msgstr "असाइन गर्नुहोस्"
 
 #: src/app/routes/_authenticated/_sellers/sellers_.$id.tsx:56
 msgid "Successfully created seller"
 msgstr "विक्रेता सफलतापूर्वक सिर्जना गरियो"
+
+#. placeholder {0}: failedChannelIds.length
+#. placeholder {1}: selectedChannelIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:104
+msgid "Failed to assign {entityIdsLength} {entityType} to {0} of {1} channels"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:91
 msgid "Successfully updated shipping method"
@@ -3306,6 +3351,10 @@ msgstr "पुनः क्रम गर्न तान्नुहोस्"
 #: src/app/routes/_authenticated/_zones/zones.tsx:24
 msgid "Zones"
 msgstr "क्षेत्रहरू"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:163
+msgid "Choose what to do with any stock remaining in the {count, plural, one {# stock location} other {# stock locations}} you are deleting. All selected locations transfer their remaining stock into the single location you choose, or discard it."
+msgstr "तपाईंले मेट्न लाग्नुभएको {count, plural, one {# स्टक स्थान} other {# स्टक स्थानहरू}} मा बाँकी रहेको स्टकको के गर्ने भन्ने छान्नुहोस्। चयन गरिएका सबै स्थानहरूले आफ्नो बाँकी स्टक तपाईंले छान्नुभएको एउटै स्थानमा सार्छन्, वा त्यसलाई हटाउँछन्।"
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:170
 #: src/lib/components/shared/facet-value-selector.tsx:123
@@ -3393,6 +3442,10 @@ msgstr "देश चयन गर्नुहोस्"
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:100
 msgid "Failed to update shipping method"
 msgstr "ढुवानी विधि अद्यावधिक गर्न असफल"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:103
+msgid "{deleted, plural, one {Deleted {deleted} stock location} other {Deleted {deleted} stock locations}}"
+msgstr "{deleted, plural, one {{deleted} स्टक स्थान मेटियो} other {{deleted} स्टक स्थानहरू मेटिए}}"
 
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:42
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods.tsx:19
@@ -3588,6 +3641,10 @@ msgstr "ड्राफ्ट अर्डर स्थिति"
 #~ msgid "Successfully created product options"
 #~ msgstr "उत्पादन विकल्पहरू सफलतापूर्वक सिर्जना गरियो"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:190
+msgid "Loading locations…"
+msgstr "स्थानहरू लोड हुँदै छन्…"
+
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:110
 msgid "Failed to create payment method"
 msgstr "भुक्तानी विधि सिर्जना गर्न असफल"
@@ -3665,6 +3722,13 @@ msgstr "भुक्तानी सम्पन्न गर्न असफल
 #: src/app/routes/_authenticated/_orders/orders_.$id_.modify.tsx:300
 msgid "No billing address"
 msgstr "कुनै बिलिङ ठेगाना छैन"
+
+#. placeholder {0}: failed.length
+#. placeholder {1}: failed.length
+#. placeholder {2}: failed.length
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:120
+msgid "{0, plural, one {Failed to delete {1} stock location} other {Failed to delete {2} stock locations}}"
+msgstr "{0, plural, one {{1} स्टक स्थान मेट्न सकिएन} other {{2} स्टक स्थानहरू मेट्न सकिएन}}"
 
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:119
 msgid "Facet"
@@ -4314,6 +4378,10 @@ msgstr "URL र लक्ष्य विकल्पहरूसहित न�
 msgid "Height"
 msgstr "उचाइ"
 
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:118
+msgid "Assign {entityType} to channels"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/components/order-modification-preview-dialog.tsx:180
 msgid "A refund of {formattedDiff} is required. Select payment amounts and enter a note to proceed."
 msgstr "{formattedDiff} को फिर्ता आवश्यक छ। भुक्तानी रकम चयन गर्नुहोस् र जारी राख्न टिप्पणी प्रविष्ट गर्नुहोस्।"
@@ -4340,6 +4408,7 @@ msgstr "च्यानल थप्नुहोस्"
 #~ msgid "Failed to update product option group"
 #~ msgstr "उत्पादन विकल्प समूह अद्यावधिक गर्न असफल"
 
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:137
 #: src/lib/components/shared/channel-selector.tsx:48
 msgid "Search channels..."
 msgstr "च्यानलहरू खोज्नुहोस्..."
@@ -4379,6 +4448,10 @@ msgstr "दृश्यलाई ग्लोबलमा रूपान्त�
 
 #: src/app/routes/_authenticated/_payment-methods/components/payment-eligibility-checker-selector.tsx:37
 msgid "Select Payment Eligibility Checker"
+msgstr ""
+
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:136
+msgid "Select one or more channels"
 msgstr ""
 
 #: src/lib/components/data-table/filters/data-table-enum-filter.tsx:53
@@ -4617,6 +4690,10 @@ msgstr "कस्टम फिल्डहरू"
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods.tsx:71
 msgid "New Shipping Method"
 msgstr "नयाँ ढुवानी विधि"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:160
+msgid "Delete stock locations"
+msgstr "स्टक स्थानहरू मेट्नुहोस्"
 
 #: src/lib/components/data-table/human-readable-operator.tsx:47
 msgid "is greater than or equal to"
@@ -5121,8 +5198,8 @@ msgid "Using native authentication strategy"
 msgstr "मूल प्रमाणीकरण रणनीति प्रयोग गर्दै"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:73
-msgid "Failed to assign {entityIdsLength} {entityType} to channel"
-msgstr "च्यानलमा {entityIdsLength} {entityType} तोक्न असफल"
+#~ msgid "Failed to assign {entityIdsLength} {entityType} to channel"
+#~ msgstr "च्यानलमा {entityIdsLength} {entityType} तोक्न असफल"
 
 #: src/lib/components/layout/manage-languages-dialog.tsx:351
 msgid "Default Language"
@@ -5543,8 +5620,8 @@ msgid "Failed to create shipping method"
 msgstr "ढुवानी विधि सिर्जना गर्न असफल"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:68
-msgid "Successfully assigned {entityIdsLength} {entityType} to channel"
-msgstr "च्यानलमा {entityIdsLength} {entityType} सफलतापूर्वक असाइन गरियो"
+#~ msgid "Successfully assigned {entityIdsLength} {entityType} to channel"
+#~ msgstr "च्यानलमा {entityIdsLength} {entityType} सफलतापूर्वक असाइन गरियो"
 
 #: src/lib/components/layout/manage-languages-dialog.tsx:253
 msgid "Global Languages"
@@ -5602,7 +5679,7 @@ msgstr "मान"
 msgid "Customer updated"
 msgstr "ग्राहक अपडेट गरियो"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:146
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:165
 msgid "Price conversion factor"
 msgstr "मूल्य रूपान्तरण कारक"
 
@@ -5745,8 +5822,8 @@ msgid "New Facet"
 msgstr "नयाँ विशेषता"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:92
-msgid "Assign {entityType} to channel"
-msgstr "च्यानलमा {entityType} असाइन गर्नुहोस्"
+#~ msgid "Assign {entityType} to channel"
+#~ msgstr "च्यानलमा {entityType} असाइन गर्नुहोस्"
 
 #: src/lib/components/data-table/data-table-bulk-action-item.tsx:125
 #: src/lib/components/shared/confirmation-dialog.tsx:51

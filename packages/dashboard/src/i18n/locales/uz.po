@@ -199,6 +199,13 @@ msgstr "Joriy"
 msgid "No fulfillments"
 msgstr "Bajarishlar yo'q"
 
+#. placeholder {0}: failed.length
+#. placeholder {1}: failed.length
+#. placeholder {2}: failed.length
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:116
+msgid "{0, plural, one {Failed to delete {1} stock location: {messages}} other {Failed to delete {2} stock locations: {messages}}}"
+msgstr "{0, plural, one {{1} ta ombor joylashuvini o'chirib bo'lmadi: {messages}} other {{2} ta ombor joylashuvini o'chirib bo'lmadi: {messages}}}"
+
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:339
 msgid "When this is enabled, the prices entered in the product catalog will be included in the tax for the default tax zone."
 msgstr "Bu yoqilganda, mahsulot katalogidagi narxlar standart soliq hududi solig'iga kiritiladi."
@@ -359,10 +366,9 @@ msgstr "Pul qaytarish jami manfiy bo'lishi mumkin emas"
 msgid "View details"
 msgstr "Tafsilotlarni ko'rish"
 
-#. placeholder {0}: entityIds.length
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:95
-msgid "Select a channel to assign {0} {entityType} to"
-msgstr "{0} {entityType} ni biriktirish uchun kanalni tanlang"
+#~ msgid "Select a channel to assign {0} {entityType} to"
+#~ msgstr "{0} {entityType} ni biriktirish uchun kanalni tanlang"
 
 #: src/app/routes/_authenticated/_customers/customers_.$id.tsx:100
 msgid "Successfully created customer"
@@ -1016,6 +1022,10 @@ msgstr "Ajratilgan"
 msgid "Failed to set coupon code for order: {0}"
 msgstr "Buyurtma uchun kupon kodini o'rnatib bo'lmadi: {0}"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:191
+msgid "Select what to do with remaining stock"
+msgstr "Qolgan zaxira bilan nima qilishni tanlang"
+
 #: src/lib/components/layout/nav-user.tsx:102
 msgid "Explore Platform & Cloud"
 msgstr "Platforma va Cloudni o'rganing"
@@ -1384,7 +1394,6 @@ msgstr "Aksiya muvaffaqiyatli yangilandi"
 msgid "{rejected, plural, one {Failed to cancel {rejected} job} other {Failed to cancel {rejected} jobs}}"
 msgstr "{rejected, plural, one {{rejected} ta vazifani bekor qilib bo'lmadi} other {{rejected} ta vazifani bekor qilib bo'lmadi}}"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:111
 #: src/lib/components/shared/channel-selector.tsx:47
 msgid "Select a channel"
 msgstr "Kanalni tanlang"
@@ -1396,6 +1405,11 @@ msgstr "Ko'rsatish tili"
 #: src/app/routes/_authenticated/_orders/components/order-detail-shared.tsx:309
 msgid "Fulfillment details"
 msgstr "Bajarish tafsilotlari"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:89
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:202
+msgid "Discard remaining stock"
+msgstr "Qolgan zaxirani bekor qilish"
 
 #: src/lib/components/data-input/datetime-input.tsx:181
 msgid "Now"
@@ -1447,6 +1461,8 @@ msgstr "Standart hisob-kitob manzili sifatida ishlatish"
 #: src/app/common/delete-bulk-action.tsx:139
 #: src/app/routes/_authenticated/_assets/components/asset-bulk-actions.tsx:41
 #: src/app/routes/_authenticated/_products/products_.$id_.variants.tsx:337
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:217
+#: src/app/routes/_authenticated/_stock-locations/components/stock-location-bulk-actions.tsx:28
 #: src/lib/components/data-table/use-generated-columns.tsx:407
 #: src/lib/components/data-table/use-generated-columns.tsx:437
 #: src/lib/components/data-table/views-sheet.tsx:270
@@ -1580,6 +1596,7 @@ msgstr "Oxirgi sahifaga o'tish"
 #: src/app/routes/_authenticated/_orders/components/settle-refund-dialog.tsx:71
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:273
 #: src/app/routes/_authenticated/_products/components/force-remove-option-group-dialog.tsx:48
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:210
 #: src/app/routes/_authenticated/_system/settings-store.tsx:140
 #: src/lib/components/data-input/product-multi-selector-input.tsx:470
 #: src/lib/components/data-table/data-table-bulk-action-item.tsx:122
@@ -1588,7 +1605,7 @@ msgstr "Oxirgi sahifaga o'tish"
 #: src/lib/components/data-table/views-sheet.tsx:293
 #: src/lib/components/layout/manage-languages-dialog.tsx:379
 #: src/lib/components/shared/asset/asset-focal-point-editor.tsx:88
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:126
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:145
 #: src/lib/components/shared/confirmation-dialog.tsx:42
 #: src/lib/components/shared/customer-address-form.tsx:253
 #: src/lib/components/shared/navigation-confirmation.tsx:55
@@ -1848,6 +1865,10 @@ msgstr "Natijalar yo'q"
 msgid "Column settings"
 msgstr "Ustun sozlamalari"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:137
+msgid "{count, plural, one {Failed to delete {count} stock location} other {Failed to delete {count} stock locations}}"
+msgstr "{count, plural, one {{count} ta ombor joylashuvini o'chirib bo'lmadi} other {{count} ta ombor joylashuvini o'chirib bo'lmadi}}"
+
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:224
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:110
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:137
@@ -1869,6 +1890,14 @@ msgstr "Optsiya guruhlarini olib tashlab bo'lmadi"
 #: src/app/routes/_authenticated/_orders/components/order-history/order-history-utils.tsx:97
 msgid "Order delivered"
 msgstr "Buyurtma yetkazib berildi"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:47
+msgid "Transfer to {name}"
+msgstr "{name} ga o'tkazish"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:174
+msgid "Remaining stock"
+msgstr "Qolgan zaxira"
 
 #: src/app/routes/_authenticated/_zones/components/zone-bulk-actions.tsx:49
 msgid "Remove from zone"
@@ -2641,6 +2670,11 @@ msgstr "Chegirma"
 msgid "All types"
 msgstr "Barcha turlar"
 
+#. placeholder {0}: entityIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:121
+msgid "Select channels to assign {0} {entityType} to"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/components/draft-order-status.tsx:29
 msgid "Only draft orders can be completed"
 msgstr "Faqat qoralama buyurtmalarni yakunlash mumkin"
@@ -2666,7 +2700,7 @@ msgstr "Faset qiymatlarini qoʻshish"
 msgid "after"
 msgstr "keyin"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:103
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:129
 msgid "Channel"
 msgstr "Kanal"
 
@@ -2946,6 +2980,11 @@ msgstr "Oʻzgarishlarni saqlash"
 msgid "Address updated"
 msgstr "Manzil yangilandi"
 
+#. placeholder {0}: selectedChannelIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:95
+msgid "Successfully assigned {entityIdsLength} {entityType} to {0} channels"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/hooks/use-refund-order.ts:299
 msgid "Refund processed successfully"
 msgstr "Pul qaytarish amalga oshirildi"
@@ -3189,13 +3228,19 @@ msgstr "Toifa"
 msgid "Moving..."
 msgstr "Ko'chirilmoqda..."
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:129
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:148
 msgid "Assign"
 msgstr "Tayinlash"
 
 #: src/app/routes/_authenticated/_sellers/sellers_.$id.tsx:56
 msgid "Successfully created seller"
 msgstr "Sotuvchi yaratildi"
+
+#. placeholder {0}: failedChannelIds.length
+#. placeholder {1}: selectedChannelIds.length
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:104
+msgid "Failed to assign {entityIdsLength} {entityType} to {0} of {1} channels"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:91
 msgid "Successfully updated shipping method"
@@ -3214,6 +3259,10 @@ msgstr "Qayta tartiblash uchun torting"
 #: src/app/routes/_authenticated/_zones/zones.tsx:24
 msgid "Zones"
 msgstr "Hududlar"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:163
+msgid "Choose what to do with any stock remaining in the {count, plural, one {# stock location} other {# stock locations}} you are deleting. All selected locations transfer their remaining stock into the single location you choose, or discard it."
+msgstr "O'chirilayotgan {count, plural, one {# ombor joylashuvida} other {# ombor joylashuvida}} qolgan zaxira bilan nima qilishni tanlang. Barcha tanlangan joylashuvlar qolgan zaxirasini siz tanlagan yagona joylashuvga o'tkazadi yoki uni bekor qiladi."
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:170
 #: src/lib/components/shared/facet-value-selector.tsx:123
@@ -3301,6 +3350,10 @@ msgstr "Mamlakatni tanlang"
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:100
 msgid "Failed to update shipping method"
 msgstr "Yetkazib berish usulini yangilab bo'lmadi"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:103
+msgid "{deleted, plural, one {Deleted {deleted} stock location} other {Deleted {deleted} stock locations}}"
+msgstr "{deleted, plural, one {{deleted} ta ombor joylashuvi o'chirildi} other {{deleted} ta ombor joylashuvi o'chirildi}}"
 
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods_.$id.tsx:42
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods.tsx:19
@@ -3477,6 +3530,10 @@ msgstr "Jami soliq"
 msgid "Draft order status"
 msgstr "Qoralama buyurtma holati"
 
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:190
+msgid "Loading locations…"
+msgstr "Joylashuvlar yuklanmoqda…"
+
 #: src/app/routes/_authenticated/_payment-methods/payment-methods_.$id.tsx:110
 msgid "Failed to create payment method"
 msgstr "To'lov usulini yaratib bo'lmadi"
@@ -3554,6 +3611,13 @@ msgstr "To'lovni yakunlab bo'lmadi"
 #: src/app/routes/_authenticated/_orders/orders_.$id_.modify.tsx:300
 msgid "No billing address"
 msgstr "Hisob-kitob manzili yo'q"
+
+#. placeholder {0}: failed.length
+#. placeholder {1}: failed.length
+#. placeholder {2}: failed.length
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:120
+msgid "{0, plural, one {Failed to delete {1} stock location} other {Failed to delete {2} stock locations}}"
+msgstr "{0, plural, one {{1} ta ombor joylashuvini o'chirib bo'lmadi} other {{2} ta ombor joylashuvini o'chirib bo'lmadi}}"
 
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:119
 msgid "Facet"
@@ -4178,6 +4242,10 @@ msgstr "URL va maqsad parametrlari bilan yangi havola qo'shish"
 msgid "Height"
 msgstr "Balandlik"
 
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:118
+msgid "Assign {entityType} to channels"
+msgstr ""
+
 #: src/app/routes/_authenticated/_orders/components/order-modification-preview-dialog.tsx:180
 msgid "A refund of {formattedDiff} is required. Select payment amounts and enter a note to proceed."
 msgstr "{formattedDiff} miqdorida pul qaytarish talab qilinadi. To'lov summalarini tanlang va davom etish uchun eslatma kiriting."
@@ -4200,6 +4268,7 @@ msgstr "To'lov muvaffaqiyatsiz tugadi"
 msgid "Add channel"
 msgstr "Kanal qo'shish"
 
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:137
 #: src/lib/components/shared/channel-selector.tsx:48
 msgid "Search channels..."
 msgstr "Kanallarni qidirish..."
@@ -4239,6 +4308,10 @@ msgstr "Ko'rinishni globalga o'tkazib bo'lmadi"
 
 #: src/app/routes/_authenticated/_payment-methods/components/payment-eligibility-checker-selector.tsx:37
 msgid "Select Payment Eligibility Checker"
+msgstr ""
+
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:136
+msgid "Select one or more channels"
 msgstr ""
 
 #: src/lib/components/data-table/filters/data-table-enum-filter.tsx:53
@@ -4461,6 +4534,10 @@ msgstr "Maxsus maydonlar"
 #: src/app/routes/_authenticated/_shipping-methods/shipping-methods.tsx:71
 msgid "New Shipping Method"
 msgstr "Yangi yetkazib berish usuli"
+
+#: src/app/routes/_authenticated/_stock-locations/components/delete-stock-locations-dialog.tsx:160
+msgid "Delete stock locations"
+msgstr "Ombor joylashuvlarini o'chirish"
 
 #: src/lib/components/data-table/human-readable-operator.tsx:47
 msgid "is greater than or equal to"
@@ -4941,8 +5018,8 @@ msgid "Using native authentication strategy"
 msgstr "Mahalliy autentifikatsiya strategiyasidan foydalanilmoqda"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:73
-msgid "Failed to assign {entityIdsLength} {entityType} to channel"
-msgstr "{entityIdsLength} ta {entityType} kanalga biriktirib bo'lmadi"
+#~ msgid "Failed to assign {entityIdsLength} {entityType} to channel"
+#~ msgstr "{entityIdsLength} ta {entityType} kanalga biriktirib bo'lmadi"
 
 #: src/lib/components/layout/manage-languages-dialog.tsx:351
 msgid "Default Language"
@@ -5351,8 +5428,8 @@ msgid "Failed to create shipping method"
 msgstr "Yetkazib berish usulini yaratib bo'lmadi"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:68
-msgid "Successfully assigned {entityIdsLength} {entityType} to channel"
-msgstr "{entityIdsLength} ta {entityType} kanalga muvaffaqiyatli biriktirildi"
+#~ msgid "Successfully assigned {entityIdsLength} {entityType} to channel"
+#~ msgstr "{entityIdsLength} ta {entityType} kanalga muvaffaqiyatli biriktirildi"
 
 #: src/lib/components/layout/manage-languages-dialog.tsx:253
 msgid "Global Languages"
@@ -5406,7 +5483,7 @@ msgstr "Qiymat"
 msgid "Customer updated"
 msgstr "Mijoz yangilandi"
 
-#: src/lib/components/shared/assign-to-channel-dialog.tsx:146
+#: src/lib/components/shared/assign-to-channel-dialog.tsx:165
 msgid "Price conversion factor"
 msgstr "Narx konversiya koeffitsienti"
 
@@ -5545,8 +5622,8 @@ msgid "New Facet"
 msgstr "Yangi faset"
 
 #: src/lib/components/shared/assign-to-channel-dialog.tsx:92
-msgid "Assign {entityType} to channel"
-msgstr "{entityType} ni kanalga biriktirish"
+#~ msgid "Assign {entityType} to channel"
+#~ msgstr "{entityType} ni kanalga biriktirish"
 
 #: src/lib/components/data-table/data-table-bulk-action-item.tsx:125
 #: src/lib/components/shared/confirmation-dialog.tsx:51
