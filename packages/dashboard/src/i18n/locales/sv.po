@@ -23,8 +23,8 @@ msgid "Select items"
 msgstr "Välj artiklar"
 
 #: src/lib/components/shared/asset/asset-gallery.tsx:457
-msgid "Uploading assets..."
-msgstr ""
+#~ msgid "Uploading assets..."
+#~ msgstr ""
 
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:33
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:86
@@ -161,7 +161,7 @@ msgstr "Skattesats uppdaterad"
 msgid "Enter custom reason..."
 msgstr "Ange anpassad anledning..."
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:763
+#: src/lib/components/shared/asset/asset-gallery.tsx:755
 msgid "Type"
 msgstr "Typ"
 
@@ -635,7 +635,7 @@ msgstr "Flytta kollektioner"
 msgid "Roles"
 msgstr "Roller"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:395
+#: src/lib/components/shared/asset/asset-gallery.tsx:390
 msgid "Grid view"
 msgstr "Rutnätsvy"
 
@@ -663,7 +663,7 @@ msgstr "Är du säker på att du vill ta bort {selectionLength} tillgångar?"
 msgid "Sign in"
 msgstr "Logga in"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:398
+#: src/lib/components/shared/asset/asset-gallery.tsx:393
 msgid "List view"
 msgstr "Listvy"
 
@@ -797,7 +797,7 @@ msgstr "Slutför utkast"
 #: src/app/routes/_authenticated/_tax-categories/tax-categories_.$id.tsx:106
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:113
 #: src/app/routes/_authenticated/_zones/zones_.$id.tsx:93
-#: src/lib/components/shared/asset/asset-gallery.tsx:762
+#: src/lib/components/shared/asset/asset-gallery.tsx:754
 msgid "Name"
 msgstr "Namn"
 
@@ -837,7 +837,7 @@ msgstr "Leverans skapad"
 msgid "Found {0} eligible shipping method{1}"
 msgstr "Hittade {0} lämplig fraktmetod{1}"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:765
+#: src/lib/components/shared/asset/asset-gallery.tsx:757
 #: src/lib/components/shared/asset/asset-properties.tsx:39
 msgid "Dimensions"
 msgstr "Mått"
@@ -1135,8 +1135,8 @@ msgstr "Leveransmetod angiven för beställning"
 msgid "Failed to update promotion"
 msgstr "Misslyckades att uppdatera kampanj"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:368
-#: src/lib/components/shared/asset/asset-gallery.tsx:380
+#: src/lib/components/shared/asset/asset-gallery.tsx:363
+#: src/lib/components/shared/asset/asset-gallery.tsx:375
 msgid "Images"
 msgstr "Bilder"
 
@@ -1259,7 +1259,7 @@ msgid "No items selected"
 msgstr "Inga artiklar valda"
 
 #. placeholder {0}: selected.length
-#: src/lib/components/shared/asset/asset-gallery.tsx:488
+#: src/lib/components/shared/asset/asset-gallery.tsx:472
 msgid ", {0} selected"
 msgstr ", {0} valda"
 
@@ -1481,7 +1481,7 @@ msgstr "före"
 msgid "Failed to set customer for order: {0}"
 msgstr ""
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:764
+#: src/lib/components/shared/asset/asset-gallery.tsx:756
 msgid "Size"
 msgstr "Storlek"
 
@@ -1599,7 +1599,7 @@ msgstr "Adress uppdaterad"
 
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:226
 #: src/app/routes/_authenticated/_orders/components/fulfillment-details.tsx:124
-#: src/lib/components/shared/asset/asset-gallery.tsx:766
+#: src/lib/components/shared/asset/asset-gallery.tsx:758
 #: src/lib/framework/layout-engine/page-layout.tsx:733
 msgid "Created"
 msgstr "Skapad"
@@ -2707,6 +2707,10 @@ msgstr "Beräkna om frakt"
 msgid "Assets"
 msgstr "Tillgångar"
 
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
+msgid "Uploading..."
+msgstr ""
+
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:300
 msgid "This will remove all option groups from this product and return to the variant setup choice."
 msgstr "Detta tar bort alla alternativgrupper från produkten och återgår till variantval."
@@ -2744,8 +2748,8 @@ msgstr "Beställning avbruten"
 msgid "Discount"
 msgstr "Rabatt"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:367
-#: src/lib/components/shared/asset/asset-gallery.tsx:379
+#: src/lib/components/shared/asset/asset-gallery.tsx:362
+#: src/lib/components/shared/asset/asset-gallery.tsx:374
 msgid "All types"
 msgstr "Alla typer"
 
@@ -3294,7 +3298,7 @@ msgid "Processing..."
 msgstr "Bearbetar..."
 
 #. placeholder {0}: totalItems === 1 ? 'asset' : 'assets'
-#: src/lib/components/shared/asset/asset-gallery.tsx:484
+#: src/lib/components/shared/asset/asset-gallery.tsx:468
 msgid "{totalItems} {0} found"
 msgstr "{totalItems} {0} hittades"
 
@@ -3538,7 +3542,7 @@ msgstr "Kanaler"
 msgid "Shipping refunded"
 msgstr "Frakt återbetald"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:376
+#: src/lib/components/shared/asset/asset-gallery.tsx:371
 msgid "Asset type"
 msgstr "Tillgångstyp"
 
@@ -4109,7 +4113,7 @@ msgstr "Misslyckades att uppdatera betalningsstatus"
 msgid "Your orders summary"
 msgstr "Översikt över dina beställningar"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:411
+#: src/lib/components/shared/asset/asset-gallery.tsx:402
 msgid "Upload"
 msgstr "Ladda upp"
 
@@ -4489,6 +4493,11 @@ msgstr "Spara en vy som \"Global\" för att göra den tillgänglig för alla anv
 msgid "Failed to create variants"
 msgstr "Misslyckades med att skapa varianter"
 
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:190
+msgid "Upload progress for {0} files"
+msgstr ""
+
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:133
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "Anger lagernivån vid vilken denna variant anses vara slut i lager. Användning av negativt värde aktiverar restorderstöd. Kan åsidosättas av produktvarianter."
@@ -4531,7 +4540,7 @@ msgstr "Rensa filter"
 msgid "Regions"
 msgstr "Regioner"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:450
+#: src/lib/components/shared/asset/asset-gallery.tsx:441
 msgid "Drop files here to upload"
 msgstr "Släpp filer här för att ladda upp"
 
@@ -4877,7 +4886,7 @@ msgstr "Region / Provins"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:495
+#: src/lib/components/shared/asset/asset-gallery.tsx:479
 msgid "Items per page"
 msgstr "Antal per sida"
 
@@ -4982,6 +4991,10 @@ msgstr "({maxRefundable} återbetalningsbart)"
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:73
 msgid "Identifier"
 msgstr "Identifierare"
+
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:187
+msgid "Uploading assets"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/components/fulfillment-handler-selector.tsx:51
 msgid "Select a fulfillment handler"
@@ -5264,7 +5277,7 @@ msgstr "Skriv och tryck Enter eller komma för att lägga till..."
 msgid "Edit Note"
 msgstr "Redigera anteckning"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:647
+#: src/lib/components/shared/asset/asset-gallery.tsx:639
 msgid "No assets found. Try adjusting your filters."
 msgstr "Inga tillgångar hittades. Försök justera filtren."
 
@@ -5290,7 +5303,7 @@ msgstr "Administratör har uppdaterats"
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:282
 #: src/lib/components/data-table/data-table-faceted-filter.tsx:185
-#: src/lib/components/shared/asset/asset-gallery.tsx:361
+#: src/lib/components/shared/asset/asset-gallery.tsx:356
 msgid "Clear filters"
 msgstr "Rensa filter"
 
@@ -5319,8 +5332,8 @@ msgstr "Status"
 msgid "No options found"
 msgstr "Inga alternativ hittades"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:370
-#: src/lib/components/shared/asset/asset-gallery.tsx:382
+#: src/lib/components/shared/asset/asset-gallery.tsx:365
+#: src/lib/components/shared/asset/asset-gallery.tsx:377
 msgid "Binary"
 msgstr "Binär"
 
@@ -5381,6 +5394,11 @@ msgstr "Fraktmetod skapades"
 #: src/app/routes/_authenticated/_customer-groups/customer-groups.tsx:61
 msgid "New Customer Group"
 msgstr "Ny kundgrupp"
+
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:197
+msgid "{doneCount} of {0} done"
+msgstr ""
 
 #: src/lib/components/shared/history-timeline/history-note-checkbox.tsx:24
 msgid "Visible to customer"
@@ -5561,8 +5579,8 @@ msgstr ""
 msgid "Remove item"
 msgstr "Ta bort artikel"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:369
-#: src/lib/components/shared/asset/asset-gallery.tsx:381
+#: src/lib/components/shared/asset/asset-gallery.tsx:364
+#: src/lib/components/shared/asset/asset-gallery.tsx:376
 msgid "Video"
 msgstr "Video"
 
@@ -5813,7 +5831,7 @@ msgstr "Rensa"
 msgid "Orders Summary"
 msgstr "Beställningsöversikt"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:349
+#: src/lib/components/shared/asset/asset-gallery.tsx:344
 msgid "Search assets..."
 msgstr "Sök tillgångar..."
 
@@ -6072,6 +6090,7 @@ msgid "is greater than"
 msgstr "är större än"
 
 #: src/app/routes/_authenticated/_api-keys/components/api-key-secret-dialog.tsx:125
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
 msgid "Close"
 msgstr "Stäng"
 

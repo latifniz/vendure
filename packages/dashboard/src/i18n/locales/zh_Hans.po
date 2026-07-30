@@ -23,8 +23,8 @@ msgid "Select items"
 msgstr "选择项目"
 
 #: src/lib/components/shared/asset/asset-gallery.tsx:457
-msgid "Uploading assets..."
-msgstr ""
+#~ msgid "Uploading assets..."
+#~ msgstr ""
 
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:33
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:86
@@ -161,7 +161,7 @@ msgstr "已成功更新税率"
 msgid "Enter custom reason..."
 msgstr "输入自定义原因..."
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:763
+#: src/lib/components/shared/asset/asset-gallery.tsx:755
 msgid "Type"
 msgstr "类型"
 
@@ -635,7 +635,7 @@ msgstr "移动集合"
 msgid "Roles"
 msgstr "角色"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:395
+#: src/lib/components/shared/asset/asset-gallery.tsx:390
 msgid "Grid view"
 msgstr "网格视图"
 
@@ -663,7 +663,7 @@ msgstr "确定要删除 {selectionLength} 个资源吗？"
 msgid "Sign in"
 msgstr "登录"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:398
+#: src/lib/components/shared/asset/asset-gallery.tsx:393
 msgid "List view"
 msgstr "列表视图"
 
@@ -797,7 +797,7 @@ msgstr "完成草稿"
 #: src/app/routes/_authenticated/_tax-categories/tax-categories_.$id.tsx:106
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:113
 #: src/app/routes/_authenticated/_zones/zones_.$id.tsx:93
-#: src/lib/components/shared/asset/asset-gallery.tsx:762
+#: src/lib/components/shared/asset/asset-gallery.tsx:754
 msgid "Name"
 msgstr "名称"
 
@@ -837,7 +837,7 @@ msgstr "履行已创建"
 msgid "Found {0} eligible shipping method{1}"
 msgstr "找到 {0} 个符合条件的配送方式"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:765
+#: src/lib/components/shared/asset/asset-gallery.tsx:757
 #: src/lib/components/shared/asset/asset-properties.tsx:39
 msgid "Dimensions"
 msgstr "尺寸"
@@ -1135,8 +1135,8 @@ msgstr "订单已设置配送方式"
 msgid "Failed to update promotion"
 msgstr "更新促销失败"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:368
-#: src/lib/components/shared/asset/asset-gallery.tsx:380
+#: src/lib/components/shared/asset/asset-gallery.tsx:363
+#: src/lib/components/shared/asset/asset-gallery.tsx:375
 msgid "Images"
 msgstr "图片"
 
@@ -1259,7 +1259,7 @@ msgid "No items selected"
 msgstr "未选择项目"
 
 #. placeholder {0}: selected.length
-#: src/lib/components/shared/asset/asset-gallery.tsx:488
+#: src/lib/components/shared/asset/asset-gallery.tsx:472
 msgid ", {0} selected"
 msgstr "，已选择 {0} 项"
 
@@ -1481,7 +1481,7 @@ msgstr "之前"
 msgid "Failed to set customer for order: {0}"
 msgstr ""
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:764
+#: src/lib/components/shared/asset/asset-gallery.tsx:756
 msgid "Size"
 msgstr "大小"
 
@@ -1599,7 +1599,7 @@ msgstr "地址已成功更新"
 
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:226
 #: src/app/routes/_authenticated/_orders/components/fulfillment-details.tsx:124
-#: src/lib/components/shared/asset/asset-gallery.tsx:766
+#: src/lib/components/shared/asset/asset-gallery.tsx:758
 #: src/lib/framework/layout-engine/page-layout.tsx:733
 msgid "Created"
 msgstr "已创建"
@@ -2707,6 +2707,10 @@ msgstr "重新计算运费"
 msgid "Assets"
 msgstr "资源"
 
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
+msgid "Uploading..."
+msgstr ""
+
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:300
 msgid "This will remove all option groups from this product and return to the variant setup choice."
 msgstr "这将移除此产品的所有选项组并返回变体设置选择。"
@@ -2744,8 +2748,8 @@ msgstr "订单已取消"
 msgid "Discount"
 msgstr "折扣"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:367
-#: src/lib/components/shared/asset/asset-gallery.tsx:379
+#: src/lib/components/shared/asset/asset-gallery.tsx:362
+#: src/lib/components/shared/asset/asset-gallery.tsx:374
 msgid "All types"
 msgstr "所有类型"
 
@@ -3294,7 +3298,7 @@ msgid "Processing..."
 msgstr "处理中..."
 
 #. placeholder {0}: totalItems === 1 ? 'asset' : 'assets'
-#: src/lib/components/shared/asset/asset-gallery.tsx:484
+#: src/lib/components/shared/asset/asset-gallery.tsx:468
 msgid "{totalItems} {0} found"
 msgstr "找到 {totalItems} 个{0}"
 
@@ -3538,7 +3542,7 @@ msgstr "渠道"
 msgid "Shipping refunded"
 msgstr "运费已退款"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:376
+#: src/lib/components/shared/asset/asset-gallery.tsx:371
 msgid "Asset type"
 msgstr "资源类型"
 
@@ -4109,7 +4113,7 @@ msgstr "更新支付状态失败"
 msgid "Your orders summary"
 msgstr "您的订单摘要"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:411
+#: src/lib/components/shared/asset/asset-gallery.tsx:402
 msgid "Upload"
 msgstr "上传"
 
@@ -4489,6 +4493,11 @@ msgstr "将视图保存为\"全局\"以使其对所有用户可用。"
 msgid "Failed to create variants"
 msgstr "创建变体失败"
 
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:190
+msgid "Upload progress for {0} files"
+msgstr ""
+
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:133
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "设置将此变体视为缺货的库存水平。使用负值可启用延期交货支持。可由商品变体覆盖。"
@@ -4531,7 +4540,7 @@ msgstr "清除筛选器"
 msgid "Regions"
 msgstr "地区"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:450
+#: src/lib/components/shared/asset/asset-gallery.tsx:441
 msgid "Drop files here to upload"
 msgstr "将文件拖放到此处上传"
 
@@ -4877,7 +4886,7 @@ msgstr "州/省"
 msgid "Enabled"
 msgstr "已启用"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:495
+#: src/lib/components/shared/asset/asset-gallery.tsx:479
 msgid "Items per page"
 msgstr "每页条数"
 
@@ -4982,6 +4991,10 @@ msgstr "({maxRefundable} 可退款)"
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:73
 msgid "Identifier"
 msgstr "标识符"
+
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:187
+msgid "Uploading assets"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/components/fulfillment-handler-selector.tsx:51
 msgid "Select a fulfillment handler"
@@ -5264,7 +5277,7 @@ msgstr "输入后按 Enter 或逗号添加..."
 msgid "Edit Note"
 msgstr "编辑备注"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:647
+#: src/lib/components/shared/asset/asset-gallery.tsx:639
 msgid "No assets found. Try adjusting your filters."
 msgstr "未找到资源。请尝试调整筛选条件。"
 
@@ -5290,7 +5303,7 @@ msgstr "成功更新管理员"
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:282
 #: src/lib/components/data-table/data-table-faceted-filter.tsx:185
-#: src/lib/components/shared/asset/asset-gallery.tsx:361
+#: src/lib/components/shared/asset/asset-gallery.tsx:356
 msgid "Clear filters"
 msgstr "清除筛选器"
 
@@ -5319,8 +5332,8 @@ msgstr "状态"
 msgid "No options found"
 msgstr "未找到选项"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:370
-#: src/lib/components/shared/asset/asset-gallery.tsx:382
+#: src/lib/components/shared/asset/asset-gallery.tsx:365
+#: src/lib/components/shared/asset/asset-gallery.tsx:377
 msgid "Binary"
 msgstr "二进制"
 
@@ -5381,6 +5394,11 @@ msgstr "成功创建配送方式"
 #: src/app/routes/_authenticated/_customer-groups/customer-groups.tsx:61
 msgid "New Customer Group"
 msgstr "新客户组"
+
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:197
+msgid "{doneCount} of {0} done"
+msgstr ""
 
 #: src/lib/components/shared/history-timeline/history-note-checkbox.tsx:24
 msgid "Visible to customer"
@@ -5561,8 +5579,8 @@ msgstr ""
 msgid "Remove item"
 msgstr "删除项目"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:369
-#: src/lib/components/shared/asset/asset-gallery.tsx:381
+#: src/lib/components/shared/asset/asset-gallery.tsx:364
+#: src/lib/components/shared/asset/asset-gallery.tsx:376
 msgid "Video"
 msgstr "视频"
 
@@ -5813,7 +5831,7 @@ msgstr "清除"
 msgid "Orders Summary"
 msgstr "订单摘要"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:349
+#: src/lib/components/shared/asset/asset-gallery.tsx:344
 msgid "Search assets..."
 msgstr "搜索资源..."
 
@@ -6072,6 +6090,7 @@ msgid "is greater than"
 msgstr "大于"
 
 #: src/app/routes/_authenticated/_api-keys/components/api-key-secret-dialog.tsx:125
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
 msgid "Close"
 msgstr "关闭"
 

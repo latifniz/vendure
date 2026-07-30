@@ -23,11 +23,12 @@ import { graphql } from '@/vdb/graphql/graphql.js';
 import { useLocalFormat } from '@/vdb/hooks/use-local-format.js';
 import { formatFileSize } from '@/vdb/lib/utils.js';
 import { Trans, useLingui } from '@lingui/react/macro';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link } from '@tanstack/react-router';
 import { useDebounce } from '@uidotdev/usehooks';
 import { ChevronRight, LayoutGrid, LayoutList, Loader2, Search, Upload, X } from 'lucide-react';
 import { useCallback, useState } from 'react';
+import { AssetUploadModal } from './asset-upload-modal.js';
 import { useDropzone } from 'react-dropzone';
 import { tagListDocument } from '../../../../app/routes/_authenticated/_assets/assets.graphql.js';
 import { AssetTagFilter } from '../../../../app/routes/_authenticated/_assets/components/asset-tag-filter.js';
@@ -246,20 +247,13 @@ export function AssetGallery({
 
     const assets = (data?.assets.items ?? []) as Asset[];
 
-    const { mutate: createAssets, isPending: isUploading } = useMutation({
-        mutationFn: api.mutate(createAssetsDocument),
-        onSuccess: () => {
-            queryClient.invalidateQueries({ queryKey });
-        },
-    });
+    const [pendingFiles, setPendingFiles] = useState<File[]>([]);
+    const [uploadModalOpen, setUploadModalOpen] = useState(false);
 
-    // Setup dropzone
-    const onDrop = useCallback(
-        (acceptedFiles: File[]) => {
-            createAssets({ input: acceptedFiles.map(file => ({ file })) });
-        },
-        [createAssets],
-    );
+    const onDrop = useCallback((acceptedFiles: File[]) => {
+        setPendingFiles(acceptedFiles);
+        setUploadModalOpen(true);
+    }, []);
 
     const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop, noClick: true });
 
@@ -331,15 +325,16 @@ export function AssetGallery({
         fileInput.addEventListener('change', event => {
             const target = event.target as HTMLInputElement;
             if (target.files) {
-                const filesList = Array.from(target.files);
-                onDrop(filesList);
+                setPendingFiles(Array.from(target.files));
+                setUploadModalOpen(true);
             }
         });
         fileInput.click();
     };
 
     return (
-        <div className={`relative flex flex-col w-full ${fixedHeight ? 'h-[600px]' : 'h-full'} ${className}`}>
+        <>
+            <div className={`relative flex flex-col w-full ${fixedHeight ? 'h-[600px]' : 'h-full'} ${className}`}>
             {showHeader && (
                 <div className="space-y-4 mb-4 flex-shrink-0">
                     <div className="flex flex-col md:flex-row gap-2">
@@ -402,12 +397,8 @@ export function AssetGallery({
                         )}
                         <PageActionBar>
                             <ActionBarItem itemId="upload-assets-button">
-                                <Button onClick={openFileDialog} disabled={isUploading} className="whitespace-nowrap">
-                                    {isUploading ? (
-                                        <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                                    ) : (
-                                        <Upload className="h-4 w-4 mr-2" />
-                                    )}
+                                <Button onClick={openFileDialog} className="whitespace-nowrap">
+                                    <Upload className="h-4 w-4 mr-2" />
                                     <Trans>Upload</Trans>
                                 </Button>
                             </ActionBarItem>
@@ -448,13 +439,6 @@ export function AssetGallery({
                     <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10 flex flex-col items-center justify-center rounded-md">
                         <Upload className="h-12 w-12 text-primary mb-2" />
                         <p className="text-center font-medium"><Trans>Drop files here to upload</Trans></p>
-                    </div>
-                )}
-
-                {isUploading && (
-                    <div className="absolute inset-0 bg-background/70 backdrop-blur-sm z-10 flex flex-col items-center justify-center rounded-md">
-                        <Loader2 className="h-10 w-10 text-primary animate-spin mb-3" />
-                        <p className="text-center font-medium"><Trans>Uploading assets...</Trans></p>
                     </div>
                 )}
 
@@ -629,6 +613,14 @@ export function AssetGallery({
                 )}
             </div>
         </div>
+
+        <AssetUploadModal
+            files={pendingFiles}
+            open={uploadModalOpen}
+            onComplete={() => queryClient.invalidateQueries({ queryKey })}
+            onClose={() => setUploadModalOpen(false)}
+        />
+        </>
     );
 }
 

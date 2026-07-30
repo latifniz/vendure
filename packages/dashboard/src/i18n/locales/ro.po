@@ -23,8 +23,8 @@ msgid "Select items"
 msgstr "Selectează elementele"
 
 #: src/lib/components/shared/asset/asset-gallery.tsx:457
-msgid "Uploading assets..."
-msgstr ""
+#~ msgid "Uploading assets..."
+#~ msgstr ""
 
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:33
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:86
@@ -157,7 +157,7 @@ msgstr "Cota de taxă a fost actualizată cu succes"
 msgid "Enter custom reason..."
 msgstr "Introdu motiv personalizat..."
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:763
+#: src/lib/components/shared/asset/asset-gallery.tsx:755
 msgid "Type"
 msgstr "Tip"
 
@@ -607,7 +607,7 @@ msgstr "Mută Colecții"
 msgid "Roles"
 msgstr "Roluri"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:395
+#: src/lib/components/shared/asset/asset-gallery.tsx:390
 msgid "Grid view"
 msgstr "Vizualizare grilă"
 
@@ -635,7 +635,7 @@ msgstr "Ești sigur că vrei să ștergi {selectionLength} resurse?"
 msgid "Sign in"
 msgstr "Autentificare"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:398
+#: src/lib/components/shared/asset/asset-gallery.tsx:393
 msgid "List view"
 msgstr "Vizualizare listă"
 
@@ -769,7 +769,7 @@ msgstr "Finalizează ciorna"
 #: src/app/routes/_authenticated/_tax-categories/tax-categories_.$id.tsx:106
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:113
 #: src/app/routes/_authenticated/_zones/zones_.$id.tsx:93
-#: src/lib/components/shared/asset/asset-gallery.tsx:762
+#: src/lib/components/shared/asset/asset-gallery.tsx:754
 msgid "Name"
 msgstr "Nume"
 
@@ -809,7 +809,7 @@ msgstr "Livrare creată"
 msgid "Found {0} eligible shipping method{1}"
 msgstr "S-au găsit {0} metode de livrare eligibile"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:765
+#: src/lib/components/shared/asset/asset-gallery.tsx:757
 #: src/lib/components/shared/asset/asset-properties.tsx:39
 msgid "Dimensions"
 msgstr "Dimensiuni"
@@ -1103,8 +1103,8 @@ msgstr "Metoda de livrare setată pentru comandă"
 msgid "Failed to update promotion"
 msgstr "Nu s-a putut actualiza promoția"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:368
-#: src/lib/components/shared/asset/asset-gallery.tsx:380
+#: src/lib/components/shared/asset/asset-gallery.tsx:363
+#: src/lib/components/shared/asset/asset-gallery.tsx:375
 msgid "Images"
 msgstr "Imagini"
 
@@ -1223,7 +1223,7 @@ msgid "No items selected"
 msgstr "Nu sunt selectate elemente"
 
 #. placeholder {0}: selected.length
-#: src/lib/components/shared/asset/asset-gallery.tsx:488
+#: src/lib/components/shared/asset/asset-gallery.tsx:472
 msgid ", {0} selected"
 msgstr ", {0} selectate"
 
@@ -1433,7 +1433,7 @@ msgstr "înainte"
 msgid "Failed to set customer for order: {0}"
 msgstr ""
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:764
+#: src/lib/components/shared/asset/asset-gallery.tsx:756
 msgid "Size"
 msgstr "Dimensiune"
 
@@ -1546,7 +1546,7 @@ msgstr "Adresă actualizată cu succes"
 
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:226
 #: src/app/routes/_authenticated/_orders/components/fulfillment-details.tsx:124
-#: src/lib/components/shared/asset/asset-gallery.tsx:766
+#: src/lib/components/shared/asset/asset-gallery.tsx:758
 #: src/lib/framework/layout-engine/page-layout.tsx:733
 msgid "Created"
 msgstr "Creat"
@@ -2628,6 +2628,10 @@ msgstr "Recalculează livrarea"
 msgid "Assets"
 msgstr "Resurse"
 
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
+msgid "Uploading..."
+msgstr ""
+
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:300
 msgid "This will remove all option groups from this product and return to the variant setup choice."
 msgstr "Se vor elimina toate grupurile de opțiuni de pe acest produs și veți reveni la alegerea configurării variantelor."
@@ -2665,8 +2669,8 @@ msgstr "Comandă anulată"
 msgid "Discount"
 msgstr "Reducere"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:367
-#: src/lib/components/shared/asset/asset-gallery.tsx:379
+#: src/lib/components/shared/asset/asset-gallery.tsx:362
+#: src/lib/components/shared/asset/asset-gallery.tsx:374
 msgid "All types"
 msgstr "Toate tipurile"
 
@@ -3202,7 +3206,7 @@ msgid "Processing..."
 msgstr "Se procesează..."
 
 #. placeholder {0}: totalItems === 1 ? 'asset' : 'assets'
-#: src/lib/components/shared/asset/asset-gallery.tsx:484
+#: src/lib/components/shared/asset/asset-gallery.tsx:468
 msgid "{totalItems} {0} found"
 msgstr "{totalItems} {0} găsite"
 
@@ -3438,7 +3442,7 @@ msgstr "Canale"
 msgid "Shipping refunded"
 msgstr "Livrare rambursată"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:376
+#: src/lib/components/shared/asset/asset-gallery.tsx:371
 msgid "Asset type"
 msgstr "Tip resursă"
 
@@ -3981,7 +3985,7 @@ msgstr "Nu s-a putut actualiza statusul plății"
 msgid "Your orders summary"
 msgstr "Rezumatul comenzilor tale"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:411
+#: src/lib/components/shared/asset/asset-gallery.tsx:402
 msgid "Upload"
 msgstr "Încărcare"
 
@@ -4349,6 +4353,11 @@ msgstr "Salvează o vizualizare ca \"Globală\" pentru a o face disponibilă tut
 msgid "Failed to create variants"
 msgstr "Nu s-au putut crea variantele"
 
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:190
+msgid "Upload progress for {0} files"
+msgstr ""
+
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:133
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "Setează nivelul de stoc la care o variantă este considerată a fi în afara stocului. Folosirea unei valori negative activează suportul pentru precomandă. Poate fi suprascris de variantele de produs."
@@ -4387,7 +4396,7 @@ msgstr "Șterge filtru"
 msgid "Regions"
 msgstr "Regiuni"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:450
+#: src/lib/components/shared/asset/asset-gallery.tsx:441
 msgid "Drop files here to upload"
 msgstr "Trage fișiere aici pentru încărcare"
 
@@ -4721,7 +4730,7 @@ msgstr "Județ / Provincie"
 msgid "Enabled"
 msgstr "Activat"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:495
+#: src/lib/components/shared/asset/asset-gallery.tsx:479
 msgid "Items per page"
 msgstr "Elemente pe pagină"
 
@@ -4826,6 +4835,10 @@ msgstr "({maxRefundable} rambursabil)"
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:73
 msgid "Identifier"
 msgstr "Identificator"
+
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:187
+msgid "Uploading assets"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/components/fulfillment-handler-selector.tsx:51
 msgid "Select a fulfillment handler"
@@ -5084,7 +5097,7 @@ msgstr "Tastează și apasă Enter sau virgulă pentru a adăuga..."
 msgid "Edit Note"
 msgstr "Editează nota"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:647
+#: src/lib/components/shared/asset/asset-gallery.tsx:639
 msgid "No assets found. Try adjusting your filters."
 msgstr "Nu s-au găsit resurse. Încearcă să ajustezi filtrele."
 
@@ -5106,7 +5119,7 @@ msgstr "Administratorul a fost actualizat cu succes"
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:282
 #: src/lib/components/data-table/data-table-faceted-filter.tsx:185
-#: src/lib/components/shared/asset/asset-gallery.tsx:361
+#: src/lib/components/shared/asset/asset-gallery.tsx:356
 msgid "Clear filters"
 msgstr "Șterge filtre"
 
@@ -5135,8 +5148,8 @@ msgstr "Status"
 msgid "No options found"
 msgstr "Nu au fost găsite opțiuni"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:370
-#: src/lib/components/shared/asset/asset-gallery.tsx:382
+#: src/lib/components/shared/asset/asset-gallery.tsx:365
+#: src/lib/components/shared/asset/asset-gallery.tsx:377
 msgid "Binary"
 msgstr "Binar"
 
@@ -5193,6 +5206,11 @@ msgstr "Metoda de livrare a fost creată cu succes"
 #: src/app/routes/_authenticated/_customer-groups/customer-groups.tsx:61
 msgid "New Customer Group"
 msgstr "Grup Client Nou"
+
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:197
+msgid "{doneCount} of {0} done"
+msgstr ""
 
 #: src/lib/components/shared/history-timeline/history-note-checkbox.tsx:24
 msgid "Visible to customer"
@@ -5373,8 +5391,8 @@ msgstr ""
 msgid "Remove item"
 msgstr "Elimină element"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:369
-#: src/lib/components/shared/asset/asset-gallery.tsx:381
+#: src/lib/components/shared/asset/asset-gallery.tsx:364
+#: src/lib/components/shared/asset/asset-gallery.tsx:376
 msgid "Video"
 msgstr "Video"
 
@@ -5613,7 +5631,7 @@ msgstr "Șterge"
 msgid "Orders Summary"
 msgstr "Rezumat comenzi"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:349
+#: src/lib/components/shared/asset/asset-gallery.tsx:344
 msgid "Search assets..."
 msgstr "Caută resurse..."
 
@@ -5864,6 +5882,7 @@ msgid "is greater than"
 msgstr "este mai mare decât"
 
 #: src/app/routes/_authenticated/_api-keys/components/api-key-secret-dialog.tsx:125
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
 msgid "Close"
 msgstr "Închide"
 

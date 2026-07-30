@@ -23,8 +23,8 @@ msgid "Select items"
 msgstr "Selecteer items"
 
 #: src/lib/components/shared/asset/asset-gallery.tsx:457
-msgid "Uploading assets..."
-msgstr ""
+#~ msgid "Uploading assets..."
+#~ msgstr ""
 
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:33
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:86
@@ -161,7 +161,7 @@ msgstr "Belastingtarief succesvol bijgewerkt"
 msgid "Enter custom reason..."
 msgstr "Voer een aangepaste reden in..."
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:763
+#: src/lib/components/shared/asset/asset-gallery.tsx:755
 msgid "Type"
 msgstr "Type"
 
@@ -635,7 +635,7 @@ msgstr "Collecties verplaatsen"
 msgid "Roles"
 msgstr "Rollen"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:395
+#: src/lib/components/shared/asset/asset-gallery.tsx:390
 msgid "Grid view"
 msgstr "Rasterweergave"
 
@@ -663,7 +663,7 @@ msgstr "Weet u zeker dat u {selectionLength} bestanden wilt verwijderen?"
 msgid "Sign in"
 msgstr "Inloggen"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:398
+#: src/lib/components/shared/asset/asset-gallery.tsx:393
 msgid "List view"
 msgstr "Lijstweergave"
 
@@ -797,7 +797,7 @@ msgstr "Concept voltooien"
 #: src/app/routes/_authenticated/_tax-categories/tax-categories_.$id.tsx:106
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:113
 #: src/app/routes/_authenticated/_zones/zones_.$id.tsx:93
-#: src/lib/components/shared/asset/asset-gallery.tsx:762
+#: src/lib/components/shared/asset/asset-gallery.tsx:754
 msgid "Name"
 msgstr "Naam"
 
@@ -837,7 +837,7 @@ msgstr "Afhandeling aangemaakt"
 msgid "Found {0} eligible shipping method{1}"
 msgstr "{0} geschikte verzendmethode(n) gevonden"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:765
+#: src/lib/components/shared/asset/asset-gallery.tsx:757
 #: src/lib/components/shared/asset/asset-properties.tsx:39
 msgid "Dimensions"
 msgstr "Afmetingen"
@@ -1139,8 +1139,8 @@ msgstr "Verzendmethode ingesteld voor bestelling"
 msgid "Failed to update promotion"
 msgstr "Promotie bijwerken mislukt"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:368
-#: src/lib/components/shared/asset/asset-gallery.tsx:380
+#: src/lib/components/shared/asset/asset-gallery.tsx:363
+#: src/lib/components/shared/asset/asset-gallery.tsx:375
 msgid "Images"
 msgstr "Afbeeldingen"
 
@@ -1263,7 +1263,7 @@ msgid "No items selected"
 msgstr "Geen items geselecteerd"
 
 #. placeholder {0}: selected.length
-#: src/lib/components/shared/asset/asset-gallery.tsx:488
+#: src/lib/components/shared/asset/asset-gallery.tsx:472
 msgid ", {0} selected"
 msgstr ", {0} geselecteerd"
 
@@ -1485,7 +1485,7 @@ msgstr "voor"
 msgid "Failed to set customer for order: {0}"
 msgstr ""
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:764
+#: src/lib/components/shared/asset/asset-gallery.tsx:756
 msgid "Size"
 msgstr "Maat"
 
@@ -1603,7 +1603,7 @@ msgstr "Adres succesvol bijgewerkt"
 
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:226
 #: src/app/routes/_authenticated/_orders/components/fulfillment-details.tsx:124
-#: src/lib/components/shared/asset/asset-gallery.tsx:766
+#: src/lib/components/shared/asset/asset-gallery.tsx:758
 #: src/lib/framework/layout-engine/page-layout.tsx:733
 msgid "Created"
 msgstr "Aangemaakt"
@@ -2701,6 +2701,10 @@ msgstr "Verzendkosten herberekenen"
 msgid "Assets"
 msgstr "Middelen"
 
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
+msgid "Uploading..."
+msgstr ""
+
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:300
 msgid "This will remove all option groups from this product and return to the variant setup choice."
 msgstr "Dit verwijdert alle optiegroepen van dit product en keert terug naar de variantkeuze."
@@ -2738,8 +2742,8 @@ msgstr "Bestelling geannuleerd"
 msgid "Discount"
 msgstr "Korting"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:367
-#: src/lib/components/shared/asset/asset-gallery.tsx:379
+#: src/lib/components/shared/asset/asset-gallery.tsx:362
+#: src/lib/components/shared/asset/asset-gallery.tsx:374
 msgid "All types"
 msgstr "Alle typen"
 
@@ -3288,7 +3292,7 @@ msgid "Processing..."
 msgstr "Bezig met verwerken..."
 
 #. placeholder {0}: totalItems === 1 ? 'asset' : 'assets'
-#: src/lib/components/shared/asset/asset-gallery.tsx:484
+#: src/lib/components/shared/asset/asset-gallery.tsx:468
 msgid "{totalItems} {0} found"
 msgstr "{totalItems} {0} gevonden"
 
@@ -3532,7 +3536,7 @@ msgstr "Kanalen"
 msgid "Shipping refunded"
 msgstr "Verzendkosten gerestitueerd"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:376
+#: src/lib/components/shared/asset/asset-gallery.tsx:371
 msgid "Asset type"
 msgstr "Bestandstype"
 
@@ -4100,7 +4104,7 @@ msgstr "Betalingsstatus bijwerken mislukt"
 msgid "Your orders summary"
 msgstr "Uw besteloverzicht"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:411
+#: src/lib/components/shared/asset/asset-gallery.tsx:402
 msgid "Upload"
 msgstr "Uploaden"
 
@@ -4480,6 +4484,11 @@ msgstr "Sla een weergave op als \"Globaal\" om deze beschikbaar te maken voor al
 msgid "Failed to create variants"
 msgstr "Aanmaken van varianten mislukt"
 
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:190
+msgid "Upload progress for {0} files"
+msgstr ""
+
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:133
 msgid "Sets the stock level at which this a variant is considered to be out of stock. Using a negative value enables backorder support. Can be overridden by product variants."
 msgstr "Stelt het voorraadniveau in waarbij deze variant als uitverkocht wordt beschouwd. Het gebruik van een negatieve waarde schakelt ondersteuning voor nabestellingen in. Kan worden overschreven door productvarianten."
@@ -4522,7 +4531,7 @@ msgstr "Filter wissen"
 msgid "Regions"
 msgstr "Regio's"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:450
+#: src/lib/components/shared/asset/asset-gallery.tsx:441
 msgid "Drop files here to upload"
 msgstr "Sleep bestanden hierheen om te uploaden"
 
@@ -4872,7 +4881,7 @@ msgstr "Staat / Provincie"
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:495
+#: src/lib/components/shared/asset/asset-gallery.tsx:479
 msgid "Items per page"
 msgstr "Items per pagina"
 
@@ -4977,6 +4986,10 @@ msgstr "({maxRefundable} restitueerbaar)"
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:73
 msgid "Identifier"
 msgstr "Identificatie"
+
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:187
+msgid "Uploading assets"
+msgstr ""
 
 #: src/app/routes/_authenticated/_shipping-methods/components/fulfillment-handler-selector.tsx:51
 msgid "Select a fulfillment handler"
@@ -5259,7 +5272,7 @@ msgstr "Typ en druk op Enter of komma om toe te voegen..."
 msgid "Edit Note"
 msgstr "Notitie bewerken"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:647
+#: src/lib/components/shared/asset/asset-gallery.tsx:639
 msgid "No assets found. Try adjusting your filters."
 msgstr "Geen bestanden gevonden. Probeer uw filters aan te passen."
 
@@ -5285,7 +5298,7 @@ msgstr "Beheerder succesvol bijgewerkt"
 
 #: src/lib/components/data-table/data-table-facet-value-faceted-filter.tsx:282
 #: src/lib/components/data-table/data-table-faceted-filter.tsx:185
-#: src/lib/components/shared/asset/asset-gallery.tsx:361
+#: src/lib/components/shared/asset/asset-gallery.tsx:356
 msgid "Clear filters"
 msgstr "Filters wissen"
 
@@ -5314,8 +5327,8 @@ msgstr "Status"
 msgid "No options found"
 msgstr "Geen opties gevonden"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:370
-#: src/lib/components/shared/asset/asset-gallery.tsx:382
+#: src/lib/components/shared/asset/asset-gallery.tsx:365
+#: src/lib/components/shared/asset/asset-gallery.tsx:377
 msgid "Binary"
 msgstr "Binair"
 
@@ -5376,6 +5389,11 @@ msgstr "Verzendmethode succesvol aangemaakt"
 #: src/app/routes/_authenticated/_customer-groups/customer-groups.tsx:61
 msgid "New Customer Group"
 msgstr "Nieuwe klantengroep"
+
+#. placeholder {0}: fileUploads.length
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:197
+msgid "{doneCount} of {0} done"
+msgstr ""
 
 #: src/lib/components/shared/history-timeline/history-note-checkbox.tsx:24
 msgid "Visible to customer"
@@ -5556,8 +5574,8 @@ msgstr ""
 msgid "Remove item"
 msgstr "Item verwijderen"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:369
-#: src/lib/components/shared/asset/asset-gallery.tsx:381
+#: src/lib/components/shared/asset/asset-gallery.tsx:364
+#: src/lib/components/shared/asset/asset-gallery.tsx:376
 msgid "Video"
 msgstr "Video"
 
@@ -5808,7 +5826,7 @@ msgstr "Wissen"
 msgid "Orders Summary"
 msgstr "Besteloverzicht"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:349
+#: src/lib/components/shared/asset/asset-gallery.tsx:344
 msgid "Search assets..."
 msgstr "Bestanden zoeken..."
 
@@ -6067,6 +6085,7 @@ msgid "is greater than"
 msgstr "is groter dan"
 
 #: src/app/routes/_authenticated/_api-keys/components/api-key-secret-dialog.tsx:125
+#: src/lib/components/shared/asset/asset-upload-modal.tsx:220
 msgid "Close"
 msgstr "Sluiten"
 
