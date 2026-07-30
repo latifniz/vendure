@@ -424,7 +424,14 @@ export function AssetGallery({
 
             {/* Bulk actions bar */}
             {displayBulkActions ? (
-                <AssetBulkActions selection={selected} bulkActions={bulkActions} refetch={refetch} />
+                <AssetBulkActions
+                    selection={selected}
+                    bulkActions={bulkActions}
+                    refetch={() => {
+                        setSelected([]);
+                        refetch();
+                    }}
+                />
             ) : null}
 
             <div

@@ -1,5 +1,6 @@
 import {
     FieldInfo,
+    getEnumValues,
     isEnumType,
     isScalarType,
 } from '@/vdb/framework/document-introspection/get-document-structure.js';
@@ -15,6 +16,18 @@ import {
 } from '@/vdb/framework/form-engine/form-engine-types.js';
 import { isStringFieldWithOptions, isStructCustomFieldConfig } from '@/vdb/framework/form-engine/utils.js';
 import { z, ZodRawShape, ZodType, ZodTypeAny } from '@/vdb/lib/zod.js';
+
+/**
+ * Centralized validation messages for form schema generation.
+ * Provides consistent messaging across all form validations and enables future i18n support.
+ */
+const VALIDATION_MESSAGES = {
+    pattern: (pattern: string) => `Value must match pattern: ${pattern}`,
+    min: (min: number) => `Value must be at least ${min}`,
+    max: (max: number) => `Value must be at most ${max}`,
+    dateAfter: (date: string) => `Date must be after ${date}`,
+    dateBefore: (date: string) => `Date must be before ${date}`,
+} as const;
 
 function mapGraphQLCustomFieldToConfig(field: StructField) {
     const { __typename, ...rest } = field;
@@ -90,8 +103,8 @@ function createDateValidationSchema(minDate: Date | undefined, maxDate: Date | u
 
     const dateMinString = minDate?.toLocaleDateString() ?? '';
     const dateMaxString = maxDate?.toLocaleDateString() ?? '';
-    const dateMinMessage = minDate ? `Date must be after ${dateMinString}` : '';
-    const dateMaxMessage = maxDate ? `Date must be before ${dateMaxString}` : '';
+    const dateMinMessage = minDate ? VALIDATION_MESSAGES.dateAfter(dateMinString) : '';
+    const dateMaxMessage = maxDate ? VALIDATION_MESSAGES.dateBefore(dateMaxString) : '';
 
     return baseSchema.refine(
         val => {
@@ -121,7 +134,7 @@ function createStringValidationSchema(pattern?: string | null): ZodType {
     let schema = z.string();
     if (pattern) {
         schema = schema.regex(new RegExp(pattern), {
-            message: `Value must match pattern: ${pattern}`,
+            message: VALIDATION_MESSAGES.pattern(pattern),
         });
     }
     return schema;
@@ -139,12 +152,12 @@ function createNumberValidationSchema(min?: number | null, max?: number | null):
     let schema = z.number();
     if (min != null) {
         schema = schema.min(min, {
-            message: `Value must be at least ${min}`,
+            message: VALIDATION_MESSAGES.min(min),
         });
     }
     if (max != null) {
         schema = schema.max(max, {
-            message: `Value must be at most ${max}`,
+            message: VALIDATION_MESSAGES.max(max),
         });
     }
     return schema;
@@ -180,8 +193,9 @@ function createCustomFieldValidationSchema(customField: CustomFieldConfig): ZodT
             );
             break;
         case 'datetime': {
-            const minDate = parseDate((customField as DateTimeCustomFieldConfig).datetimeMin);
-            const maxDate = parseDate((customField as DateTimeCustomFieldConfig).datetimeMax);
+            const cf = customField as DateTimeCustomFieldConfig;
+            const minDate = parseDate(cf.datetimeMin);
+            const maxDate = parseDate(cf.datetimeMax);
             zodType = createDateValidationSchema(minDate, maxDate);
             break;
         }
@@ -437,6 +451,11 @@ export function getDefaultValueFromField(field: FieldInfo, defaultLanguageCode?:
             case 'Boolean':
                 return false;
             default:
+                // A nullable enum may be left unset; default to null rather than {}
+                // so the select renders empty instead of an invalid object value.
+                if (isEnumType(field.type)) {
+                    return null;
+                }
                 // Object-typed fields (e.g. customFields without typeInfo) should default
                 // to {} to match the Zod schema which expects an object.
                 // JSON scalar is used for customFields when the field structure isn't
@@ -464,6 +483,11 @@ export function getDefaultValueFromField(field: FieldInfo, defaultLanguageCode?:
         case 'JSON':
             return {};
         default:
+            // A non-nullable enum must hold a valid member; default to the first one
+            // rather than an empty string, which is not a valid enum value.
+            if (isEnumType(field.type)) {
+                return getEnumValues(field.type)?.[0] ?? '';
+            }
             return '';
     }
 }
@@ -475,6 +499,12 @@ export function getZodTypeFromField(field: FieldInfo): ZodTypeAny {
     // Custom fields are handled separately in createFormSchemaFromFields
 
     switch (field.type) {
+        // Required-ness cannot be inferred from the GraphQL type here, so none of these get a
+        // `min(1)`. `String!` means "not null", not "not empty" — an empty string is a valid
+        // value for e.g. `CollectionTranslationInput.description`. And a non-nullable `ID!` is
+        // not necessarily user-supplied: `CreateFacetValueInput.facetId` is injected by the page
+        // in `transformCreateInput`, so it is legitimately '' in the form.
+        // Pages declare their genuinely-required fields explicitly via `extendSchema`.
         case 'String':
         case 'ID':
         case 'DateTime':
