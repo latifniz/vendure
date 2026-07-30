@@ -22,6 +22,10 @@ msgstr "الاسم الكامل"
 msgid "Select items"
 msgstr "تحديد عناصر"
 
+#: src/lib/components/shared/asset/asset-gallery.tsx:457
+msgid "Uploading assets..."
+msgstr ""
+
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:33
 #: src/app/routes/_authenticated/_customers/components/customer-history/default-customer-history-components.tsx:86
 msgid "View changes"
@@ -73,7 +77,7 @@ msgstr "أضف عنصرًا واحدًا على الأقل إلى الطلب"
 msgid "Add products to create a test order"
 msgstr "أضف منتجات لإنشاء طلب تجريبي"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:124
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:128
 msgid "Failed to create address"
 msgstr "فشل إنشاء العنوان"
 
@@ -126,7 +130,7 @@ msgstr "هل أنت متأكد من حذف {0} {entityName}؟"
 msgid "Global out of stock threshold"
 msgstr "حد نفاد المخزون العام"
 
-#: src/lib/components/layout/channel-switcher.tsx:194
+#: src/lib/components/layout/channel-switcher.tsx:210
 #: src/lib/components/layout/manage-languages-dialog.tsx:241
 msgid "Manage Languages"
 msgstr "إدارة اللغات"
@@ -157,7 +161,7 @@ msgstr "تم تحديث معدل الضريبة بنجاح"
 msgid "Enter custom reason..."
 msgstr "أدخل سببًا مخصصًا..."
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:744
+#: src/lib/components/shared/asset/asset-gallery.tsx:763
 msgid "Type"
 msgstr "النوع"
 
@@ -168,7 +172,7 @@ msgstr ""
 #. placeholder {0}: entityName.toLowerCase()
 #. placeholder {0}: group.name
 #: src/app/routes/_authenticated/_products/components/product-option-select.tsx:57
-#: src/lib/components/data-input/default-relation-input.tsx:676
+#: src/lib/components/data-input/default-relation-input.tsx:679
 msgid "Select {0}"
 msgstr "تحديد {0}"
 
@@ -190,7 +194,7 @@ msgstr "حذف الصف"
 msgid "Conditions"
 msgstr "الشروط"
 
-#: src/lib/components/layout/channel-switcher.tsx:99
+#: src/lib/components/layout/channel-switcher.tsx:115
 msgctxt "current channel"
 msgid "Current"
 msgstr "الحالي"
@@ -281,7 +285,7 @@ msgstr "مواقع المخزون"
 msgid "Fulfillment handler"
 msgstr "معالج التنفيذ"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:247
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:251
 #: src/app/routes/_authenticated/_orders/orders.tsx:21
 #: src/app/routes/_authenticated/_orders/orders.tsx:37
 #: src/app/routes/_authenticated/_orders/utils/order-detail-loaders.tsx:48
@@ -307,7 +311,7 @@ msgstr "هل أنت متأكد من حذف هذا الشكل؟"
 #~ msgid "All resources are up and running"
 #~ msgstr "جميع الموارد تعمل بشكل جيد"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:86
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:87
 msgid "Failed to create administrator"
 msgstr "فشل في إنشاء المسؤول"
 
@@ -335,9 +339,9 @@ msgstr "فشل تحديث البلد"
 msgid "Type at least 2 characters to search..."
 msgstr "اكتب حرفين على الأقل للبحث..."
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:121
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:182
-#: src/app/routes/_authenticated/_profile/profile.tsx:108
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:122
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:186
+#: src/app/routes/_authenticated/_profile/profile.tsx:109
 msgid "Last name"
 msgstr "اسم العائلة"
 
@@ -384,7 +388,7 @@ msgstr "عرض التفاصيل"
 msgid "Select a channel to assign {0} {entityType} to"
 msgstr "حدد قناة لتعيين {0} {entityType} إليها"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:98
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:100
 msgid "Successfully created customer"
 msgstr "تم إنشاء العميل بنجاح"
 
@@ -513,7 +517,7 @@ msgstr "المنتج الأساسي"
 msgid "City"
 msgstr "المدينة"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:37
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:38
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:15
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:22
 msgid "Administrators"
@@ -616,7 +620,7 @@ msgstr "جارٍ الإضافة..."
 msgid "Move Collections"
 msgstr "نقل المجموعات"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:139
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:140
 #: src/app/routes/_authenticated/_administrators/administrators.tsx:55
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:170
 #: src/app/routes/_authenticated/_roles/roles_.$id.tsx:32
@@ -787,7 +791,7 @@ msgstr "إكمال المسودة"
 #: src/app/routes/_authenticated/_tax-categories/tax-categories_.$id.tsx:106
 #: src/app/routes/_authenticated/_tax-rates/tax-rates_.$id.tsx:113
 #: src/app/routes/_authenticated/_zones/zones_.$id.tsx:93
-#: src/lib/components/shared/asset/asset-gallery.tsx:743
+#: src/lib/components/shared/asset/asset-gallery.tsx:762
 msgid "Name"
 msgstr "الاسم"
 
@@ -827,7 +831,7 @@ msgstr "تم إنشاء التنفيذ"
 msgid "Found {0} eligible shipping method{1}"
 msgstr "تم العثور على {0} طريقة شحن مؤهلة"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:746
+#: src/lib/components/shared/asset/asset-gallery.tsx:765
 #: src/lib/components/shared/asset/asset-properties.tsx:39
 msgid "Dimensions"
 msgstr "الأبعاد"
@@ -869,7 +873,7 @@ msgstr "أدخل ملاحظة الاسترداد"
 msgid "Order line removed"
 msgstr "تمت إزالة بند الطلب"
 
-#: src/lib/components/layout/channel-switcher.tsx:158
+#: src/lib/components/layout/channel-switcher.tsx:174
 msgid "Content:"
 msgstr "المحتوى:"
 
@@ -970,9 +974,9 @@ msgstr "تم تعيين عنوان الفوترة للطلب"
 msgid "Failed to update zone"
 msgstr "فشل تحديث المنطقة"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:133
-#: src/app/routes/_authenticated/_profile/profile.tsx:120
-#: src/app/routes/_authenticated/_profile/profile.tsx:137
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:134
+#: src/app/routes/_authenticated/_profile/profile.tsx:121
+#: src/app/routes/_authenticated/_profile/profile.tsx:138
 #: src/lib/components/login/login-form.tsx:93
 msgid "Password"
 msgstr "كلمة المرور"
@@ -1153,7 +1157,7 @@ msgstr "قائمة انتظار المهام"
 msgid "Assets"
 msgstr "الملفات"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:188
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:192
 msgid "Email address"
 msgstr "عنوان البريد الإلكتروني"
 
@@ -1245,7 +1249,7 @@ msgid "No items selected"
 msgstr "لم يتم تحديد عناصر"
 
 #. placeholder {0}: selected.length
-#: src/lib/components/shared/asset/asset-gallery.tsx:469
+#: src/lib/components/shared/asset/asset-gallery.tsx:488
 msgid ", {0} selected"
 msgstr "، {0} محدد"
 
@@ -1359,7 +1363,7 @@ msgstr "تكوين إعدادات النسخ لـ {0}s"
 msgid "No variants match the current filter."
 msgstr "لا توجد متغيرات تطابق عامل التصفية الحالي."
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:203
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:207
 #: src/app/routes/_authenticated/_orders/orders_.$id_.modify.tsx:245
 msgid "Addresses"
 msgstr "العناوين"
@@ -1463,7 +1467,7 @@ msgstr "قبل"
 msgid "Failed to set customer for order: {0}"
 msgstr ""
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:745
+#: src/lib/components/shared/asset/asset-gallery.tsx:764
 msgid "Size"
 msgstr "الحجم"
 
@@ -1579,7 +1583,7 @@ msgstr "تم تحديث العنوان بنجاح"
 
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:226
 #: src/app/routes/_authenticated/_orders/components/fulfillment-details.tsx:124
-#: src/lib/components/shared/asset/asset-gallery.tsx:747
+#: src/lib/components/shared/asset/asset-gallery.tsx:766
 #: src/lib/framework/layout-engine/page-layout.tsx:733
 msgid "Created"
 msgstr "تم الإنشاء"
@@ -1811,14 +1815,14 @@ msgstr "فشل تحديث الفئة الضريبية"
 msgid "Refund settled successfully"
 msgstr "تم تسوية الاسترداد بنجاح"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:105
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:106
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:155
 #: src/app/routes/_authenticated/_assets/assets_.$id.tsx:115
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:214
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:148
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:84
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:93
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:159
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:163
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:110
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:99
 #: src/app/routes/_authenticated/_global-settings/global-settings.tsx:102
@@ -1829,7 +1833,7 @@ msgstr "تم تسوية الاسترداد بنجاح"
 #: src/app/routes/_authenticated/_product-variants/product-variants_.$id.tsx:252
 #: src/app/routes/_authenticated/_products/components/assign-facet-values-dialog.tsx:279
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:212
-#: src/app/routes/_authenticated/_profile/profile.tsx:92
+#: src/app/routes/_authenticated/_profile/profile.tsx:93
 #: src/app/routes/_authenticated/_promotions/promotions_.$id.tsx:144
 #: src/app/routes/_authenticated/_roles/roles_.$id.tsx:84
 #: src/app/routes/_authenticated/_sellers/sellers_.$id.tsx:78
@@ -1850,7 +1854,7 @@ msgstr "عنوان 2"
 msgid "Order placed"
 msgstr "تم إنشاء الطلب"
 
-#: src/app/routes/_authenticated/_profile/profile.tsx:71
+#: src/app/routes/_authenticated/_profile/profile.tsx:72
 msgid "Successfully updated profile"
 msgstr "تم تحديث الملف الشخصي بنجاح"
 
@@ -1971,13 +1975,13 @@ msgid "Facets"
 msgstr "الخصائص"
 
 #. js-lingui-explicit-id
-#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:103
+#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:107
 #: src/app/routes/_authenticated/_orders/components/order-history/use-order-history.ts:108
 msgid "Failed to add note"
 msgstr "فشل إضافة الملاحظة"
 
 #. js-lingui-explicit-id
-#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:144
+#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:148
 #: src/app/routes/_authenticated/_orders/components/order-history/use-order-history.ts:150
 msgid "Failed to delete note"
 msgstr "فشل حذف الملاحظة"
@@ -1988,7 +1992,7 @@ msgid "Failed to extend query document"
 msgstr "فشل توسيع مستند الاستعلام"
 
 #. js-lingui-explicit-id
-#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:124
+#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:128
 #: src/app/routes/_authenticated/_orders/components/order-history/use-order-history.ts:129
 msgid "Failed to update note"
 msgstr "فشل تحديث الملاحظة"
@@ -2617,7 +2621,7 @@ msgstr "فئة ضريبية جديدة"
 msgid "Successfully created channel"
 msgstr "تم إنشاء القناة بنجاح"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:98
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:100
 msgid "Successfully updated customer"
 msgstr "تم تحديث العميل بنجاح"
 
@@ -2629,7 +2633,7 @@ msgstr "عرض البيانات"
 msgid "Delete View"
 msgstr "حذف العرض"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:231
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:235
 msgid "Add a new address to the customer."
 msgstr "أضف عنوانًا جديدًا للعميل."
 
@@ -2760,8 +2764,8 @@ msgstr "المبلغ"
 msgid "Phone Number"
 msgstr "رقم الهاتف"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:62
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:152
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:63
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:156
 msgid "New customer"
 msgstr "عميل جديد"
 
@@ -2770,7 +2774,7 @@ msgstr "عميل جديد"
 msgid "Image"
 msgstr "الصورة"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:77
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:78
 msgid "Successfully created administrator"
 msgstr "تم إنشاء المسؤول بنجاح"
 
@@ -2795,12 +2799,12 @@ msgstr "هل أنت متأكد من حذف هذا العرض العام؟ لا �
 msgid "Force remove option group"
 msgstr "إزالة مجموعة الخيارات إجبارياً"
 
-#: src/app/routes/_authenticated/_profile/profile.tsx:140
+#: src/app/routes/_authenticated/_profile/profile.tsx:141
 msgid "Added"
 msgstr "تمت الإضافة"
 
 #: src/app/routes/_authenticated/_customers/components/customer-history/customer-history-container.tsx:30
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:250
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:254
 msgid "Customer history"
 msgstr "سجل العميل"
 
@@ -2808,7 +2812,7 @@ msgstr "سجل العميل"
 msgid "Successfully updated facet values for {entityIdsLength} {entityType}"
 msgstr "تم تحديث قيم الخصائص لـ {entityIdsLength} {entityType} بنجاح"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:144
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:148
 msgid "Failed to remove customer from group"
 msgstr "فشل إزالة العميل من المجموعة"
 
@@ -2842,13 +2846,13 @@ msgstr "إجمالي الاسترداد يتجاوز الحد الأقصى لل�
 msgid "Delete Global View"
 msgstr "حذف العرض العام"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:105
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:106
 #: src/app/routes/_authenticated/_api-keys/api-keys_.$id.tsx:155
 #: src/app/routes/_authenticated/_channels/channels_.$id.tsx:214
 #: src/app/routes/_authenticated/_collections/collections_.$id.tsx:148
 #: src/app/routes/_authenticated/_countries/countries_.$id.tsx:84
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:93
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:159
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:163
 #: src/app/routes/_authenticated/_facets/facets_.$facetId.values_.$id.tsx:110
 #: src/app/routes/_authenticated/_facets/facets_.$id.tsx:99
 #: src/app/routes/_authenticated/_option-groups/option-groups_.$groupId.options_.$id.tsx:177
@@ -2882,8 +2886,8 @@ msgstr "بلد جديد"
 msgid "From {0} to {1}"
 msgstr "من {0} إلى {1}"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:105
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:111
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:109
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:115
 msgid "Failed to create customer"
 msgstr "فشل إنشاء العميل"
 
@@ -3211,7 +3215,7 @@ msgstr "حدد لغة العرض"
 msgid "Select Payment Handler"
 msgstr ""
 
-#: src/app/routes/_authenticated/_profile/profile.tsx:128
+#: src/app/routes/_authenticated/_profile/profile.tsx:129
 msgid "Authentication methods"
 msgstr "طرق المصادقة"
 
@@ -3251,7 +3255,7 @@ msgid "Processing..."
 msgstr "جاري المعالجة..."
 
 #. placeholder {0}: totalItems === 1 ? 'asset' : 'assets'
-#: src/lib/components/shared/asset/asset-gallery.tsx:465
+#: src/lib/components/shared/asset/asset-gallery.tsx:484
 msgid "{totalItems} {0} found"
 msgstr "تم العثور على {totalItems} {0}"
 
@@ -3473,7 +3477,7 @@ msgstr "تسوية الدفع"
 #: src/app/routes/_authenticated/_option-groups/option-groups_.$id.tsx:216
 #: src/app/routes/_authenticated/_products/products_.$id.tsx:337
 #: src/app/routes/_authenticated/_roles/roles_.$id.tsx:111
-#: src/lib/components/layout/channel-switcher.tsx:146
+#: src/lib/components/layout/channel-switcher.tsx:162
 msgid "Channels"
 msgstr "القنوات"
 
@@ -3618,7 +3622,7 @@ msgstr "بحث في العملات..."
 msgid "Remove from channel"
 msgstr "إزالة من القناة"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:169
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:173
 #: src/lib/components/shared/rich-text-editor/image-dialog.tsx:157
 msgid "Title"
 msgstr "العنوان"
@@ -3779,8 +3783,8 @@ msgstr "تصفية المتغيرات..."
 msgid "Add a price in another currency"
 msgstr "إضافة سعر بعملة أخرى"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:127
-#: src/app/routes/_authenticated/_profile/profile.tsx:114
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:128
+#: src/app/routes/_authenticated/_profile/profile.tsx:115
 msgid "Email Address or identifier"
 msgstr "عنوان البريد الإلكتروني أو المعرف"
 
@@ -3791,7 +3795,7 @@ msgid "Refund #{0} transitioned to {1}"
 msgstr "تم نقل الاسترداد #{0} إلى {1}"
 
 #: src/app/routes/_authenticated/_customer-groups/customer-groups_.$id.tsx:110
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:61
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:62
 #: src/app/routes/_authenticated/_customers/customers.tsx:15
 #: src/app/routes/_authenticated/_customers/customers.tsx:21
 msgid "Customers"
@@ -3843,19 +3847,19 @@ msgid "between"
 msgstr "بين"
 
 #. js-lingui-explicit-id
-#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:99
+#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:103
 #: src/app/routes/_authenticated/_orders/components/order-history/use-order-history.ts:104
 msgid "Note added successfully"
 msgstr "تمت إضافة الملاحظة بنجاح"
 
 #. js-lingui-explicit-id
-#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:140
+#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:144
 #: src/app/routes/_authenticated/_orders/components/order-history/use-order-history.ts:146
 msgid "Note deleted successfully"
 msgstr "تم حذف الملاحظة بنجاح"
 
 #. js-lingui-explicit-id
-#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:120
+#: src/app/routes/_authenticated/_customers/components/customer-history/use-customer-history.ts:124
 #: src/app/routes/_authenticated/_orders/components/order-history/use-order-history.ts:125
 msgid "Note updated successfully"
 msgstr "تم تحديث الملاحظة بنجاح"
@@ -3960,7 +3964,7 @@ msgstr "في"
 msgid "Email"
 msgstr "البريد الإلكتروني"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:86
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:87
 msgid "Failed to update administrator"
 msgstr "فشل في تحديث المسؤول"
 
@@ -4041,7 +4045,7 @@ msgstr "فشل تحديث حالة الدفع"
 msgid "Your orders summary"
 msgstr "ملخص طلباتك"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:406
+#: src/lib/components/shared/asset/asset-gallery.tsx:411
 msgid "Upload"
 msgstr "رفع"
 
@@ -4328,7 +4332,7 @@ msgstr "نمط الجدول"
 msgid "Payment failed"
 msgstr "فشل الدفع"
 
-#: src/lib/components/layout/channel-switcher.tsx:212
+#: src/lib/components/layout/channel-switcher.tsx:228
 msgid "Add channel"
 msgstr "إضافة قناة"
 
@@ -4438,7 +4442,7 @@ msgstr "بائع جديد"
 msgid "e.g., Red, Large, Cotton"
 msgstr "مثل أحمر، كبير، قطن"
 
-#: src/app/routes/_authenticated/_profile/profile.tsx:75
+#: src/app/routes/_authenticated/_profile/profile.tsx:76
 msgid "Failed to update profile"
 msgstr "فشل تحديث الملف الشخصي"
 
@@ -4454,7 +4458,7 @@ msgstr "مسح الفلتر"
 msgid "Regions"
 msgstr "المناطق"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:438
+#: src/lib/components/shared/asset/asset-gallery.tsx:450
 msgid "Drop files here to upload"
 msgstr "أفلت الملفات هنا للتحميل"
 
@@ -4796,7 +4800,7 @@ msgstr "الولاية / المحافظة"
 msgid "Enabled"
 msgstr "ممكّن"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:476
+#: src/lib/components/shared/asset/asset-gallery.tsx:495
 msgid "Items per page"
 msgstr "العناصر في الصفحة"
 
@@ -5015,8 +5019,8 @@ msgstr "اسم المتغير"
 msgid "Remove"
 msgstr "إزالة"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:105
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:111
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:109
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:115
 msgid "Failed to update customer"
 msgstr "فشل تحديث العميل"
 
@@ -5183,7 +5187,7 @@ msgstr "اكتب ثم اضغط Enter أو الفاصلة للإضافة."
 msgid "Edit Note"
 msgstr "تحرير الملاحظة"
 
-#: src/lib/components/shared/asset/asset-gallery.tsx:628
+#: src/lib/components/shared/asset/asset-gallery.tsx:647
 msgid "No assets found. Try adjusting your filters."
 msgstr "لم يتم العثور على ملفات. حاول تعديل عوامل التصفية."
 
@@ -5203,7 +5207,7 @@ msgstr "حفظ مجموعة الخيارات"
 msgid "Click \"Run Test\" to test this shipping method."
 msgstr "انقر على \"تشغيل الاختبار\" لاختبار طريقة الشحن هذه."
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:78
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:79
 msgid "Successfully updated administrator"
 msgstr "تم تحديث المسؤول بنجاح"
 
@@ -5228,7 +5232,7 @@ msgstr "فشل حذف العرض العام"
 msgid "Default language"
 msgstr "اللغة الافتراضية"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:253
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:257
 #: src/app/routes/_authenticated/_customers/customers.tsx:44
 msgid "Status"
 msgstr "الحالة"
@@ -5325,7 +5329,7 @@ msgid "Customer not found"
 msgstr "لم يتم العثور على العميل"
 
 #. placeholder {0}: entityName.toLowerCase()
-#: src/lib/components/data-input/default-relation-input.tsx:663
+#: src/lib/components/data-input/default-relation-input.tsx:666
 msgid "Select {0}s"
 msgstr "تحديد {0}"
 
@@ -5338,9 +5342,9 @@ msgstr "قيم خصائص جديدة للإضافة:"
 msgid "Failed to process refund"
 msgstr "فشل في معالجة الاسترداد"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:115
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:176
-#: src/app/routes/_authenticated/_profile/profile.tsx:102
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:116
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:180
+#: src/app/routes/_authenticated/_profile/profile.tsx:103
 msgid "First name"
 msgstr "الاسم الأول"
 
@@ -5397,8 +5401,8 @@ msgstr "إضافة فلتر"
 msgid "Tax category"
 msgstr "الفئة الضريبية"
 
-#: src/app/routes/_authenticated/_profile/profile.tsx:38
-#: src/app/routes/_authenticated/_profile/profile.tsx:84
+#: src/app/routes/_authenticated/_profile/profile.tsx:39
+#: src/app/routes/_authenticated/_profile/profile.tsx:85
 #: src/lib/components/layout/nav-user.tsx:108
 msgid "Profile"
 msgstr "الملف الشخصي"
@@ -5428,7 +5432,7 @@ msgstr "القيمة المكررة \"{trimmed}\" موجودة بالفعل"
 msgid "Reason"
 msgstr "السبب"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:256
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:260
 msgid "Customer groups"
 msgstr "مجموعات العملاء"
 
@@ -5546,8 +5550,8 @@ msgstr "تم تعيين {entityIdsLength} {entityType} إلى القناة بن�
 msgid "Global Languages"
 msgstr "اللغات العامة"
 
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:38
-#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:97
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:39
+#: src/app/routes/_authenticated/_administrators/administrators_.$id.tsx:98
 msgid "New administrator"
 msgstr "مسؤول جديد"
 
@@ -5577,8 +5581,8 @@ msgstr "عام"
 #~ msgid "Failed to remove product from channel"
 #~ msgstr "فشل في إزالة المنتج من القناة"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:223
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:228
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:227
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:232
 msgid "Add new address"
 msgstr "إضافة عنوان جديد"
 
@@ -5913,7 +5917,7 @@ msgid "Search..."
 msgstr ""
 
 #. placeholder {0}: formatLanguageName(contentLanguage)
-#: src/lib/components/layout/channel-switcher.tsx:130
+#: src/lib/components/layout/channel-switcher.tsx:146
 msgid "Language: {0}"
 msgstr "اللغة: {0}"
 
@@ -5933,7 +5937,7 @@ msgstr "عنوان 6"
 msgid "Added coupon codes"
 msgstr "رموز قسائم مضافة"
 
-#: src/lib/components/layout/channel-switcher.tsx:180
+#: src/lib/components/layout/channel-switcher.tsx:196
 msgctxt "active language"
 msgid "Active"
 msgstr "نشط"
@@ -6057,7 +6061,7 @@ msgid "Payment method is required"
 msgstr "طريقة الدفع مطلوبة"
 
 #: src/app/routes/_authenticated/_customer-groups/components/customer-group-members-table.tsx:67
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:134
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:138
 msgid "Failed to add customer to group"
 msgstr "فشل إضافة العميل إلى المجموعة"
 
@@ -6095,7 +6099,7 @@ msgstr "الخيار"
 msgid "Order process"
 msgstr "عملية الطلب"
 
-#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:194
+#: src/app/routes/_authenticated/_customers/customers_.$id.tsx:198
 msgid "Phone number"
 msgstr "رقم الهاتف"
 
