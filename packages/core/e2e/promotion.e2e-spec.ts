@@ -402,10 +402,8 @@ describe('Promotion resolver', () => {
                 adminClient.setChannelToken(E2E_DEFAULT_CHANNEL_TOKEN);
                 await adminClient.asSuperAdmin();
 
-                // The restricted admin can only act on Promotions it can already see in its
-                // own active channel (secondChannel). Put the Promotion there first, as
-                // SuperAdmin, so the tests below exercise the real assign/remove logic
-                // instead of being stopped earlier by the channel-visibility filter.
+                // Make the Promotion visible in secondChannel so the restricted admin can
+                // reach it below, rather than being stopped by the visibility filter.
                 await adminClient.query(assignPromotionsToChannelDocument, {
                     input: {
                         channelId: secondChannel.id,
@@ -446,9 +444,7 @@ describe('Promotion resolver', () => {
             });
 
             it('can assign a Promotion to a channel it has permission on', async () => {
-                // Positive control: proves the restricted admin's permissions genuinely work,
-                // so the rejections below can be trusted to be specifically about the target
-                // channel, not some other authorization gate.
+                // Positive control for the rejections below.
                 const { assignPromotionsToChannel } = await adminClient.query(assignPromotionsToChannelDocument, {
                     input: {
                         channelId: secondChannel.id,
