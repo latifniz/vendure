@@ -213,11 +213,9 @@ export class PromotionService {
         ctx: RequestContext,
         input: AssignPromotionsToChannelInput,
     ): Promise<Promotion[]> {
-        const hasPermission = await this.roleService.userHasPermissionOnChannel(
-            ctx,
-            input.channelId,
+        const hasPermission = await this.roleService.userHasAnyPermissionsOnChannel(ctx, input.channelId, [
             Permission.UpdatePromotion,
-        );
+        ]);
         if (!hasPermission) {
             throw new ForbiddenError();
         }
@@ -235,11 +233,9 @@ export class PromotionService {
     }
 
     async removePromotionsFromChannel(ctx: RequestContext, input: RemovePromotionsFromChannelInput) {
-        const hasPermission = await this.roleService.userHasPermissionOnChannel(
-            ctx,
-            input.channelId,
+        const hasPermission = await this.roleService.userHasAnyPermissionsOnChannel(ctx, input.channelId, [
             Permission.UpdatePromotion,
-        );
+        ]);
         if (!hasPermission) {
             throw new ForbiddenError();
         }
